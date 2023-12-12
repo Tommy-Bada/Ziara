@@ -14,7 +14,7 @@
   </head>
   <body class="bg-background-color">
     <header
-      class="flex justify-between items-center px-[2rem] lg:px-[4rem] pb-[.4rem] lg:pb-[.8rem] pt-[2rem] border-b-[1px] border-black]"
+      class="flex justify-between items-center px-[2rem] lg:px-[4rem] pb-[.4rem] lg:pb-[.8rem] pt-[2rem] border-b-[1.5px] border-black"
     >
       <p class="text-[2rem] lg:text-[3rem] font-[450]">ZIARA</p>
       <div>
@@ -264,13 +264,13 @@
       </div>
     </section>
     <section class="my-[4rem] mx-[2rem] lg:mx-[4rem]">
-      <div>
+      <div class="flex justify-between items-center mb-[2rem] lg:mb-[4rem]">
         <h2 class="text-[2rem] lg:text-[4.8rem] font-[450] leading-none">
           "SIMPLICITY IS THE ULTIMATE</br> SOPHISTICATION"
         </h2>
-        <div>
-          <div><button></button></div>
-          <div><button></button></div>
+        <div class="flex">
+          <div class="mr-[2rem]"><img src="/img/arrow-light.svg" alt="arrow-right" /></div>
+          <div><img src="/img/arrow-dark.svg" alt="arrow-left" /></div>
         </div>
       </div>
       <div class="flex flex-nowrap gap-[2rem] overflow-auto ">
@@ -304,30 +304,32 @@
         </div>
       </div>
     </section>
-    <section>
-      <h2>Stay up-to-date with the latest trends in Fashion</h2>
-      <div>
-        <p>
+    <section class="flex flex-wrap justify-between px-[2rem] lg:px-[8rem] py-[4rem] lg:py-[8rem]">
+      <h2 class="text-[3rem] lg:text-[5.4rem] w-[100%] lg:w-[45%] font-[450] leading-tight">Stay up-to-date with the latest trends in Fashion</h2>
+      <div class="w-[100%] lg:w-[40%]">
+        <p class="text-[2rem] font-[400] text-footer-text-primary-color mt-[2rem] lg:mt-0">
           Ziara is a fertile ground where creative ideas sprout and take root,
           nurtured by a shared passion..
         </p>
-        <form>
-          <label>Enter your email</label>
-          <input type="email" placeholder="e.g. teemahbae@gmail.com" />
-          <div>
-            <p>Subscribe</p>
-            <div><img src /></div>
-          </div>
+        <form class="mt-[4rem]">
+          <label class="text-[1.6rem]">Enter your email</label><br>
+          <input type="email" placeholder="e.g. teemahbae@gmail.com" class="px-[1.2rem] py-[1.5rem] bg-transparent border-b-[1px] w-[80%] lg:w-[100%] border-black"/>
+          <div
+          class="flex items-center justify-center py-[1.2rem] px-[2.4rem] bg-white border-black border-[1px] rounded-full w-[max-content] mt-[3rem] lg:mt-[8rem]"
+        >
+          <p class="text-[1.2rem]">Subscribe</p>
+          <div><img src="/img/explore-icon.svg" /></div>
+        </div>
         </form>
       </div>
     </section>
-    <footer>
-      <h1>ZIARA.FASHION</h1>
-      <div>
-        <p><a href="#">@ 2023. Ziara Fashion. All Rights Reserved</a></p>
-        <div>
-          <p><a href="#">Privacy</a></p>
-          <p><a href="#">Terms and Conditions</a></p>
+    <footer >
+      <h1 class="text-center font-[450] text-[4rem] lg:text-[16.4rem] text-brand-name-dark-color">ZIARA.FASHION</h1>
+      <div class="border-t-[2px] border-black px-[4rem] py-[2rem] flex flex-col-reverse items-center lg:flex-row  lg:justify-between">
+        <p><a href="#" class="mt-[2rem] lg:mt-0 text-[1.4rem]">@ 2023. Ziara Fashion. All Rights Reserved</a></p>
+        <div class="flex flex-col items-center lg:flex-row">
+          <p class="lg:mr-[2rem]" ><a href="#" class="text-[1.4rem]">Privacy</a></p>
+          <p ><a href="#" class="text-[1.4rem]">Terms and Conditions</a></p>
         </div>
       </div>
     </footer>
