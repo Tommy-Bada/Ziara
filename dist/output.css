@@ -746,10 +746,6 @@ video {
   margin-top: 4rem;
 }
 
-.mb-\[1rem\] {
-  margin-bottom: 1rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -1844,10 +1840,6 @@ video {
   border-top-width: 1px;
 }
 
-.border-b-\[2px\] {
-  border-bottom-width: 2px;
-}
-
 .border-t-\[2px\] {
   border-top-width: 2px;
 }
@@ -2047,6 +2039,11 @@ video {
   padding-right: 3rem;
 }
 
+.px-\[4rem\] {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .py-\[1\.2rem\] {
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
@@ -2057,19 +2054,14 @@ video {
   padding-bottom: 1.5rem;
 }
 
-.py-\[4rem\] {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.px-\[4rem\] {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .py-\[2rem\] {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py-\[4rem\] {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .pb-\[\.4rem\] {
@@ -2154,10 +2146,6 @@ video {
 
 .text-\[1\.8rem\] {
   font-size: 1.8rem;
-}
-
-.text-\[16\.4rem\] {
-  font-size: 16.4rem;
 }
 
 .text-\[2rem\] {
@@ -2268,14 +2256,14 @@ video {
   color: rgb(51 102 153 / .35);
 }
 
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
+.text-brand-name-dark-color {
+  --tw-text-opacity: 1;
+  color: rgb(40 40 40 / var(--tw-text-opacity));
 }
 
 .text-footer-text-primary-color {
@@ -2286,11 +2274,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-brand-name-dark-color {
-  --tw-text-opacity: 1;
-  color: rgb(40 40 40 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2779,6 +2762,10 @@ h1 {
     margin-bottom: 8rem;
   }
 
+  .lg\:mr-\[2rem\] {
+    margin-right: 2rem;
+  }
+
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -2793,18 +2780,6 @@ h1 {
 
   .lg\:mt-\[8rem\] {
     margin-top: 8rem;
-  }
-
-  .lg\:mr-\[2rem\] {
-    margin-right: 2rem;
-  }
-
-  .lg\:mb-0 {
-    margin-bottom: 0px;
-  }
-
-  .lg\:flex {
-    display: flex;
   }
 
   .lg\:h-\[72rem\] {
@@ -2833,10 +2808,6 @@ h1 {
 
   .lg\:flex-row {
     flex-direction: row;
-  }
-
-  .lg\:flex-col {
-    flex-direction: column;
   }
 
   .lg\:flex-nowrap {
@@ -2879,6 +2850,10 @@ h1 {
     padding-left: 4rem;
   }
 
+  .lg\:text-\[16\.4rem\] {
+    font-size: 16.4rem;
+  }
+
   .lg\:text-\[2rem\] {
     font-size: 2rem;
   }
@@ -2901,10 +2876,6 @@ h1 {
 
   .lg\:text-\[6\.4rem\] {
     font-size: 6.4rem;
-  }
-
-  .lg\:text-\[16\.4rem\] {
-    font-size: 16.4rem;
   }
 }
 
