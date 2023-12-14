@@ -15,3 +15,20 @@ gsap.to(".flow-item", {
   },
   repeat: -1,
 });
+
+let cursor = document.querySelector(".cursor");
+document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.pageX - cursor.offsetWidth + "px"; // Adjust the offset
+  cursor.style.top = e.pageY - cursor.offsetHeight + "px";
+});
+
+document.querySelector("body").addEventListener("mouseover", (e) => {
+  if (e.target.classList.contains("shop-item-image")) {
+    cursor.classList.add("cursor-active");
+  } else {
+    cursor.classList.remove("cursor-active");
+  }
+});
+document.querySelector("body").addEventListener("mouseout", (e) => {
+  cursor.classList.remove("cursor-active");
+});
