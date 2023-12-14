@@ -2612,6 +2612,14 @@ h1 {
   font-size: 16.4rem;
 }
 
+.scroll-container {
+  scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 0px;
+}
+
 @media screen and (max-width: 1024px) {
   .char {
     transform: translateY(10rem);

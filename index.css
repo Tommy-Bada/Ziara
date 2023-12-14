@@ -17,6 +17,12 @@ h1 {
   transition: transform(0.5s);
   font-size: 16.4rem;
 }
+.scroll-container {
+  scrollbar-width: none;
+}
+.scroll-container::-webkit-scrollbar {
+  width: 0px;
+}
 
 @media screen and (max-width: 1024px) {
   .char {

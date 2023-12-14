@@ -15,5 +15,3 @@ gsap.to(".flow-item", {
   },
   repeat: -1,
 });
-
-console.log("Testing my script file");
