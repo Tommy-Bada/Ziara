@@ -1,5 +1,9 @@
 const ziaraText = new SplitType("#ziara-text");
+const ziaraTextTwo = new SplitType("#ziara-text-2");
+const ziaraTextThree = new SplitType("#ziara-text-3");
+const ziaraTextFour = new SplitType("#ziara-text-4");
 gsap.to(".char", {
+  opacity: 1,
   y: 0,
   stagger: 0.05,
   delay: 0.2,

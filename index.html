@@ -26,8 +26,9 @@
     <section
       class="bg-hero-background bg-no-repeat bg-center h-[70vh] sm:h-[55vh] lg:h-[72rem] m-[2rem] lg:m-[4rem] flex flex-col justify-between items-center py-[4rem] sm:py-[5rem] lg:py-[7rem]"
     >
-      <div class="leading-none">
-        <h1 class="text-center font-[450] text-white" id="ziara-text">
+      <div class="leading-none relative px-8">
+        <p class="text-box text-center font-[450] text-transparent absolute bottom-2 left-5" id="ziara-text-2">ZIARA.FASHION</p>
+        <h1 class="text-center font-[450] text-white head-text" id="ziara-text">
           ZIARA.FASHION
         </h1>
       </div>
@@ -188,16 +189,19 @@
     <section class="my-[4rem] mx-[2rem] lg:mx-[4rem]">
       <h2 class="text-[3rem] lg:text-[6.4rem] leading-none">OUR COLLECTION</h2>
       <ul class="flex flex-wrap mt-[2rem] mb-[2rem]">
-        <li class="text-[1.6rem] sm:text-[2rem] font-[400] whitespace-nowrap">
-          All Collection
+        <li class=" cursor-pointer group">
+          <p class=" text-[1.6rem] sm:text-[2rem] font-[400] whitespace-nowrap">All Collection</p>
+          <div class="bg-black w-0 h-[.3rem] opacity-0 transition-all duration-[.6s] ease-in-out lg:group-hover:w-[12.4rem] group-hover:opacity-100"></div>
         </li>
         <li
-          class="text-[1.6rem] sm:text-[2rem] font-[400] mx-[2rem] sm:mx-[4rem] whitespace-nowrap"
+          class=" mx-[2rem] sm:mx-[4rem] cursor-pointer group"
         >
-          Winter Collection
+        <p class="text-[1.6rem] sm:text-[2rem] font-[400] whitespace-nowrap ">Winter Collection</p>
+        <div class="bg-black w-0 h-[.3rem] opacity-0 transition-all duration-[.6s] ease-in-out lg:group-hover:w-[16.5rem] group-hover:opacity-100"></div>
         </li>
-        <li class="text-[1.6rem] sm:text-[2rem] font-[400] whitespace-nowrap">
-          Summer Collection
+        <li class=" cursor-pointer group">
+         <p class="text-[1.6rem] sm:text-[2rem] font-[400] whitespace-nowrap"> Summer Collection</p>
+         <div class="bg-black w-0 h-[.3rem] opacity-0 transition-all duration-[.6s] ease-in-out lg:group-hover:w-[17.8rem] group-hover:opacity-100"></div>
         </li>
       </ul>
       <div class="flex flex-wrap gap-x-[2rem] gap-y-[3rem] sm:gap-y-[4rem]">
@@ -265,11 +269,14 @@
       </div>
       <div class="w-[max-content] mx-auto">
         <img src="/img/curve-arrow.svg" />
+        <div class="group h-[5rem] w-[17rem]">
         <div
           class="flex items-center justify-center py-[1.5rem] px-[3rem] bg-white border-black border-[1px] rounded-full w-[max-content]"
         >
           <p class="text-[1.2rem]">Explore More</p>
           <div><img src="/img/explore-icon.svg" /></div>
+        </div>
+        <div class="bg-black w-[17rem] h-[5rem] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-[.6s] ease-in-out relative bottom-[4.4rem] -z-10 "></div>
         </div>
       </div>
     </section>
@@ -283,7 +290,7 @@
           <div><img src="/img/arrow-dark.svg" alt="arrow-left" /></div>
         </div>
       </div>
-      <div class="flex flex-nowrap gap-[2rem] overflow-auto ">
+      <div class="flex flex-nowrap gap-[2rem] overflow-auto scroll-container">
         <div class="min-w-[max-content]" >
           <img src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702308722/Ziara/stylish-cooperate_gcxvpc.png" class="shop-item-image cursor-none"/>
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
@@ -324,17 +331,23 @@
         <form class="mt-[4rem]">
           <label class="text-[1.6rem]">Enter your email</label><br>
           <input type="email" placeholder="e.g. teemahbae@gmail.com" class="px-[1.2rem] py-[1.5rem] bg-transparent border-b-[1px] w-[80%] lg:w-[100%] border-black focus:outline-none text-[1.4rem]"/>
+          <div class="group h-[4.4rem] w-[13.7rem]">
           <div
           class="flex items-center justify-center py-[1.2rem] px-[2.4rem] bg-white border-black border-[1px] rounded-full w-[max-content] mt-[3rem] lg:mt-[8rem]"
         >
           <p class="text-[1.2rem]">Subscribe</p>
           <div><img src="/img/explore-icon.svg" /></div>
         </div>
+        <div class="bg-black w-[13.7rem] h-[4.4rem] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-[.6s] ease-in-out relative bottom-[3.8rem] -z-10 "></div>
+        </div>
         </form>
       </div>
     </section>
     <footer >
-      <h1 class="text-center font-[450] text-[4rem] lg:text-[16.4rem] text-brand-name-dark-color">ZIARA.FASHION</h1>
+      <div class="leading-none relative m-[2rem] lg:m-[6rem]">
+        <p class="text-box-2 text-center font-[450] text-transparent absolute bottom-2 left-3" id="ziara-text-4">ZIARA.FASHION</p>
+      <h1 class="text-center font-[450] text-[4rem] lg:text-[16.4rem] text-brand-name-dark-color head-text" id="ziara-text-3">ZIARA.FASHION</h1>
+      </div>
       <div class="border-t-[2px] border-black px-[4rem] py-[2rem] flex flex-col-reverse items-center lg:flex-row  lg:justify-between">
         <p><a href="#" class="mt-[2rem] lg:mt-0 text-[1.4rem]">@ 2023. Ziara Fashion. All Rights Reserved</a></p>
         <div class="flex flex-col items-center lg:flex-row">
@@ -342,7 +355,7 @@
           <p ><a href="#" class="text-[1.4rem]">Terms and Conditions</a></p>
         </div>
       </div>
-      <div class="bg-black flex rounded-full w-[11rem] h-[11rem] justify-center items-center absolute pointer-events-none origin-center translate-x-[50%] translate-y-[50%] cursor opacity-0 transition-opacity duration-100">
+      <div class="bg-black flex rounded-full w-[11rem] h-[11rem] justify-center items-center absolute pointer-events-none origin-center translate-x-[50%] translate-y-[50%] cursor opacity-0 transition-opacity duration-[0.4s]">
         <p class="text-white text-[1.2rem]">Shop Now</p>
         <div><img src="img/cursor-arrow.svg" /></div>
       </div>

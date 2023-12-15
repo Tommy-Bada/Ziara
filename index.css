@@ -9,10 +9,11 @@
   box-sizing: border-box;
   font-size: 10px;
 }
-h1 {
+.head-text {
   clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
 }
 .char {
+  opacity: 0;
   transform: translateY(20rem);
   transition: transform(0.5s);
   font-size: 16.4rem;
@@ -23,12 +24,14 @@ h1 {
 .scroll-container::-webkit-scrollbar {
   width: 0px;
 }
-/* .shop-item-image:hover {
-  transform: scale(1.2);
-  transition: transform 0.5s ease-in-out;
-} */
 .cursor-active {
   opacity: 1;
+}
+.text-box {
+  -webkit-text-stroke: 3px #666666;
+}
+.text-box-2 {
+  -webkit-text-stroke: 3px #282828;
 }
 
 @media screen and (max-width: 1024px) {
