@@ -2754,7 +2754,7 @@ video {
 @media screen and (max-width: 640px) {
   .char {
     transform: translateY(5rem);
-    font-size: 5rem;
+    font-size: 10rem;
   }
 }
 
