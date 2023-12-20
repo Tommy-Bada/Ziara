@@ -677,6 +677,18 @@ video {
   z-index: -10;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
 .float-right {
   float: right;
 }
@@ -714,6 +726,11 @@ video {
   margin-right: 2rem;
 }
 
+.mx-\[4rem\] {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -727,6 +744,11 @@ video {
 .my-\[2rem\] {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.my-\[3rem\] {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .my-\[4rem\] {
@@ -873,6 +895,10 @@ video {
   height: .3rem;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .h-\[11rem\] {
   height: 11rem;
 }
@@ -1000,8 +1026,38 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-y-\[200\] {
+  --tw-translate-y: 200;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-y-\[50\%\] {
   --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[200px\] {
+  --tw-translate-y: 200px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[100px\] {
+  --tw-translate-y: 100px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-\[150px\] {
+  --tw-translate-y: 150px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[100vw\] {
+  --tw-translate-x: 100vw;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-x-\[-100vw\] {
+  --tw-translate-x: -100vw;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2155,6 +2211,10 @@ video {
   padding-left: 2rem;
 }
 
+.pt-\[12rem\] {
+  padding-top: 12rem;
+}
+
 .pt-\[2rem\] {
   padding-top: 2rem;
 }
@@ -2243,6 +2303,10 @@ video {
   font-size: 4rem;
 }
 
+.text-\[6\.4rem\] {
+  font-size: 6.4rem;
+}
+
 .font-\[400\] {
   font-weight: 400;
 }
@@ -2253,6 +2317,10 @@ video {
 
 .font-\[600\] {
   font-weight: 600;
+}
+
+.font-\[700\] {
+  font-weight: 700;
 }
 
 .font-bold {
@@ -2679,6 +2747,14 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
+.duration-\[\.4s\] {
+  transition-duration: .4s;
+}
+
 .duration-\[\.6s\] {
   transition-duration: .6s;
 }
@@ -2710,6 +2786,7 @@ video {
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
+  -webkit-font-smoothing: antialiased;
 }
 
 .head-text {
@@ -2742,6 +2819,18 @@ video {
 
 .text-box-2 {
   -webkit-text-stroke: 3px #282828;
+}
+
+nav {
+  position: fixed;
+}
+
+.nav-menu {
+  -webkit-text-stroke: 3px #282828;
+}
+
+.is-active {
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2803,6 +2892,11 @@ video {
 
 .hover\:font-bold:hover {
   font-weight: 700;
+}
+
+.hover\:text-brand-name-dark-color:hover {
+  --tw-text-opacity: 1;
+  color: rgb(40 40 40 / var(--tw-text-opacity));
 }
 
 .before\:hover\:text-center:hover::before {
@@ -2879,6 +2973,10 @@ video {
     font-size: 3rem;
   }
 
+  .sm\:text-\[6\.4rem\] {
+    font-size: 6.4rem;
+  }
+
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -2929,6 +3027,10 @@ video {
 
   .lg\:mt-\[8rem\] {
     margin-top: 8rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {

@@ -13,20 +13,27 @@
     />
   </head>
   <body class="bg-background-color">
+    <nav class="w-0 h-[100vh]  pt-[12rem] absolute bg-background-color z-10 transition-all duration-1000 ease-in overscroll-y-hidden">
+      <ul class="overflow-hidden mx-[4rem]">
+       <p><a href="" class="text-[4rem] sm:text-[6.4rem] font-[700] text-transparent hover:text-brand-name-dark-color transition-all duration-1000 ease-out nav-menu">BESTSELLING</a></p>
+       <p class="my-[3rem]"><a href="" class="text-[4rem] sm:text-[6.4rem] font-[700] text-transparent hover:text-brand-name-dark-color transition-all duration-1000 ease-out nav-menu">COLLECTION</a></p>
+       <p><a href="" class="text-[4rem] sm:text-[6.4rem] font-[700] text-transparent hover:text-brand-name-dark-color transition-all duration-1000 ease-out nav-menu ">NEWSLETTER</a></p>
+      </ul>
+    </nav>
     <header
-      class="flex justify-between items-center px-[2rem] lg:px-[4rem] pb-[.4rem] lg:pb-[.8rem] pt-[2rem] border-b-[1.5px] border-black"
+      class="flex justify-between items-center px-[2rem] lg:px-[4rem] pb-[.4rem] lg:pb-[.8rem] pt-[2rem] border-b-[1.5px] border-black relative z-20"
     >
       <p class="text-[2rem] lg:text-[3rem] font-[450]">ZIARA</p>
-      <div>
+      <div id="hamburger">
         <div class="w-[2.2rem] h-[2px] bg-black"></div>
         <div class="w-[2.2rem] h-[2px] bg-black my-[.4rem]"></div>
-        <div class="w-[1.6rem] h-[2px] bg-black"></div>
+        <div class="w-[1.6rem] h-[2px] bg-black hamburger-line transition-width duration-[.4s] ease-in"></div>
       </div>
     </header>
     <section
       class="bg-hero-background bg-no-repeat bg-center h-[70vh] sm:h-[55vh] lg:h-[72rem] m-[2rem] lg:m-[4rem] flex flex-col justify-between items-center py-[4rem] sm:py-[5rem] lg:py-[7rem]"
     >
-      <div class="leading-none relative px-8">
+      <div class="leading-none relative px-8 z-0">
         <p class="text-box text-center font-[450] text-transparent hidden sm:block absolute bottom-2 left-5" id="ziara-text-2">ZIARA.FASHION</p>
         <h1 class="text-center font-[450] text-white head-text" id="ziara-text">
           ZIARA.FASHION
@@ -120,7 +127,7 @@
         />
       </div>
     </section>
-    <section class="my-[2rem] lg:my-[4rem] mx-[2rem] lg:mx-[4rem]">
+    <section class="my-[2rem] lg:my-[4rem] mx-[2rem] lg:mx-[4rem] first-trigger ">
       <div class="flex flex-wrap justify-between items-center">
         <h2
           class="text-[3rem] lg:text-[6.4rem] w-[100%] lg:w-[50%] leading-none"
@@ -138,9 +145,9 @@
         </p>
       </div>
       <div
-        class="mt-[4rem] flex flex-wrap lg:flex-nowrap justify-start sm:justify-center lg:justify-between gap-[3rem] sm:gap-[4rem] shop-item-container"
+        class="mt-[4rem] flex flex-wrap lg:flex-nowrap justify-start sm:justify-center lg:justify-between gap-[3rem] sm:gap-[4rem] shop-item-container overflow-x-hidden"
       >
-        <div class="w-[max-content]">
+        <div class="w-[max-content] shop-item opacity-0 translate-x-[-100vw]">
           <img
             src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702280892/Ziara/BlackHoodie_zo7p0z.png"
             alt="Image of a Black Hoodie"
@@ -151,7 +158,7 @@
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
-        <div class="w-[max-content]">
+        <div class="w-[max-content] shop-item opacity-0 translate-x-[-100vw]">
           <img
             src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702280891/Ziara/BlackHat_dhypcg.png"
             alt="image of a black hat"
@@ -162,7 +169,7 @@
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
-        <div class="w-[max-content]">
+        <div class="w-[max-content] shop-item opacity-0 translate-x-[-100vw]">
           <img
             src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702280891/Ziara/Grey_Shirt_eenekj.png"
             alt="image of a grey shirt"
@@ -173,7 +180,7 @@
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
-        <div class="w-[max-content]">
+        <div class="w-[max-content] shop-item opacity-0 translate-x-[-100vw]">
           <img
             src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702280891/Ziara/Vintage_Scarf_ykkaze.png"
             alt="image of a vintage scarf"
@@ -186,7 +193,7 @@
         </div>
       </div>
     </section>
-    <section class="my-[4rem] mx-[2rem] lg:mx-[4rem]">
+    <section class="my-[4rem] mx-[2rem] lg:mx-[4rem] second-trigger">
       <h2 class="text-[3rem] lg:text-[6.4rem] leading-none">OUR COLLECTION</h2>
       <ul class="flex flex-wrap mt-[2rem] mb-[2rem]">
         <li class=" cursor-pointer group">
@@ -204,8 +211,8 @@
          <div class="bg-black w-0 h-[.3rem] opacity-0 transition-all duration-[.6s] ease-in-out lg:group-hover:w-[17.8rem] group-hover:opacity-100"></div>
         </li>
       </ul>
-      <div class="flex flex-wrap gap-x-[2rem] gap-y-[3rem] sm:gap-y-[4rem]">
-        <div>
+      <div class="flex flex-wrap gap-x-[2rem] gap-y-[3rem] sm:gap-y-[4rem] overflow-x-hidden">
+        <div class="shop-item-2 opacity-0 translate-x-[100vw]">
           <img
             src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702284033/Ziara/baggypant_aoxd8c.png"
             alt="Baggy Pant Image"
@@ -216,7 +223,7 @@
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
-        <div>
+        <div class="shop-item-2 opacity-0 translate-x-[100vw]">
           <img
             src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702284034/Ziara/greyfit_ypjzml.png"
             class="shop-item-image cursor-none"
@@ -226,7 +233,7 @@
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
-        <div>
+        <div class="shop-item-2 opacity-0 translate-x-[100vw]">
           <img
             src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702284034/Ziara/blackfit_ye6b1c.png"
             class="shop-item-image cursor-none"
@@ -236,7 +243,7 @@
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
-        <div>
+        <div class="shop-item-3 opacity-0 translate-x-[-100vw]">
           <img
             src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702284035/Ziara/glowfit_gbpdvm.png"
             class="shop-item-image cursor-none"
@@ -246,7 +253,7 @@
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
-        <div>
+        <div class="shop-item-3 opacity-0 translate-x-[-100vw]">
           <img
             src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702284032/Ziara/armless_ibuonj.png"
             class="shop-item-image cursor-none"
@@ -256,7 +263,7 @@
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
-        <div>
+        <div class="shop-item-3 opacity-0 translate-x-[-100vw]">
           <img
             src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702284035/Ziara/monalisa_ojo59j.png"
             class="shop-item-image cursor-none"
@@ -280,7 +287,7 @@
         </div>
       </div>
     </section>
-    <section class="my-[4rem] mx-[2rem] lg:mx-[4rem]">
+    <section class="my-[4rem] mx-[2rem] lg:mx-[4rem] third-trigger">
       <div class="flex justify-between items-center mb-[2rem] lg:mb-[4rem]">
         <h2 class="text-[2rem] lg:text-[4.8rem] font-[450] leading-none">
           "SIMPLICITY IS THE ULTIMATE</br> SOPHISTICATION"
@@ -290,29 +297,29 @@
           <div><img src="/img/arrow-dark.svg" alt="arrow-left" /></div>
         </div>
       </div>
-      <div class="flex flex-nowrap gap-[2rem] overflow-auto scroll-container">
-        <div class="min-w-[max-content]" >
+      <div class="flex flex-nowrap gap-[2rem] overflow-auto scroll-container ">
+        <div class="min-w-[max-content] shop-item-4 opacity-0 translate-x-[100vw]" >
           <img src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702308722/Ziara/stylish-cooperate_gcxvpc.png" class="shop-item-image cursor-none"/>
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
             <p class="text-[1.4rem]">MONALISA PAINING ON A SHIRT</p>
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
-        <div class="min-w-[max-content]">
+        <div class="min-w-[max-content] shop-item-4 opacity-0 translate-x-[100vw]">
           <img src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702308722/Ziara/sky_blue_hoodie_wedkye.png" class="shop-item-image cursor-none"/>
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
             <p class="text-[1.4rem]">MONALISA PAINING ON A SHIRT</p>
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
-        <div class="min-w-[max-content]">
+        <div class="min-w-[max-content] shop-item-4 opacity-0 translate-x-[100vw]">
           <img src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702308721/Ziara/fancy-gown_bpjnrg.png" class="shop-item-image cursor-none"/>
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
             <p class="text-[1.4rem]">MONALISA PAINING ON A SHIRT</p>
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
-        <div class="min-w-[max-content]">
+        <div class="min-w-[max-content] shop-item-4 opacity-0 translate-x-[100vw]">
           <img src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702308722/Ziara/stylish-cooperate_gcxvpc.png" class="shop-item-image cursor-none"/>
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
             <p class="text-[1.4rem]">MONALISA PAINING ON A SHIRT</p>
@@ -343,9 +350,9 @@
         </form>
       </div>
     </section>
-    <footer >
-      <div class="leading-none relative m-[2rem] lg:m-[6rem]">
-        <p class="text-box-2 text-center font-[450] text-transparent hidden sm:block absolute bottom-2 left-3" id="ziara-text-4">ZIARA.FASHION</p>
+    <footer class="fourth-trigger" >
+      <div class="leading-none relative m-[2rem] lg:m-[6rem] animation-item">
+        <p class="text-box-2 text-center font-[450] text-transparent hidden lg:block absolute bottom-2 left-3" id="ziara-text-4">ZIARA.FASHION</p>
       <h1 class="text-center font-[450] text-[4rem] lg:text-[16.4rem] text-brand-name-dark-color head-text" id="ziara-text-3">ZIARA.FASHION</h1>
       </div>
       <div class="border-t-[2px] border-black px-[4rem] py-[2rem] flex flex-col-reverse items-center lg:flex-row  lg:justify-between">
@@ -355,12 +362,13 @@
           <p ><a href="#" class="text-[1.4rem]">Terms and Conditions</a></p>
         </div>
       </div>
-      <div class="bg-black block lg:flex rounded-full w-[11rem] h-[11rem] justify-center items-center absolute pointer-events-none origin-center translate-x-[50%] translate-y-[50%] cursor opacity-0 transition-opacity duration-[0.4s]">
+      <div class="bg-black hidden lg:flex rounded-full w-[11rem] h-[11rem] justify-center items-center absolute pointer-events-none origin-center translate-x-[50%] translate-y-[50%] cursor opacity-0 transition-opacity duration-[0.4s]">
         <p class="text-white text-[1.2rem]">Shop Now</p>
         <div><img src="img/cursor-arrow.svg" /></div>
       </div>
     </footer>
     <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
       integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="

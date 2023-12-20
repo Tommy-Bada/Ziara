@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
+  -webkit-font-smoothing: antialiased;
 }
 .head-text {
   clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
@@ -32,6 +33,16 @@
 }
 .text-box-2 {
   -webkit-text-stroke: 3px #282828;
+}
+nav {
+  position: fixed;
+}
+.nav-menu {
+  -webkit-text-stroke: 3px #282828;
+}
+
+.is-active {
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
