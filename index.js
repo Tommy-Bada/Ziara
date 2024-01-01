@@ -1,8 +1,14 @@
+gsap.registerPlugin(ScrollTrigger);
+
 const ziaraText = new SplitType("#ziara-text");
 const ziaraTextTwo = new SplitType("#ziara-text-2");
-const ziaraTextThree = new SplitType("#ziara-text-3");
-const ziaraTextFour = new SplitType("#ziara-text-4");
 gsap.to(".char", {
+  scrollTrigger: {
+    trigger: "header",
+    start: "top bottom",
+    end: "center center",
+    markers: false,
+  },
   opacity: 1,
   y: 0,
   stagger: 0.05,
@@ -10,17 +16,15 @@ gsap.to(".char", {
   duration: 0.5,
 });
 
-gsap.registerPlugin(ScrollTrigger);
-
 gsap.to(".shop-item", {
   scrollTrigger: {
     trigger: ".first-trigger",
     start: "top bottom",
     end: "center center",
-    scrub: 1,
+    scrub: 0.5,
     markers: false,
   },
-  x: 0,
+  y: 0,
   opacity: 1,
   duration: 1,
   stagger: 0.1,
@@ -31,10 +35,10 @@ gsap.to(".shop-item-2", {
     trigger: ".second-trigger",
     start: "top bottom",
     end: "center center",
-    scrub: 1,
+    scrub: 0.5,
     markers: false,
   },
-  x: 0,
+  y: 0,
   opacity: 1,
   duration: 1,
   stagger: 0.2,
@@ -48,7 +52,7 @@ gsap.to(".shop-item-3", {
     scrub: 1,
     markers: false,
   },
-  x: 0,
+  y: 0,
   opacity: 1,
   duration: 1,
   stagger: 0.2,
@@ -94,19 +98,31 @@ document.querySelector("body").addEventListener("mouseout", (e) => {
   cursor.classList.remove("cursor-active");
 });
 
-document.querySelector("#hamburger").addEventListener("click", () => {
-  if (!document.querySelector("nav").classList.contains("is-active")) {
-    document.querySelector("nav").classList.add("is-active");
-    document.querySelector(".hamburger-line").style.width = "2.2rem";
-    // window.onscroll = function () {};
-  } else {
-    document.querySelector("nav").classList.remove("is-active");
-    document.querySelector(".hamburger-line").style.width = "1.6rem";
-    // document.querySelector("body").style.position = "fixed";
-    // scrollTop = window.scrollY || document.documentElement.scrollTop;
-    // (scrollLeft = window.scrollX || document.documentElement.scrollLeft),
-    //   (window.onscroll = function () {
-    //     window.scrollTo(scrollLeft, scrollTop);
-    //   });
-  }
-});
+// function sideScroll(element, direction, speed, distance, step) {
+//   scrollAmount = 0;
+//   var slideTimer = setInterval(function () {
+//     if (direction == "left") {
+//       element.scrollLeft -= step;
+//     } else {
+//       element.scrollLeft += step;
+//     }
+//     scrollAmount += step;
+//     if (scrollAmount >= distance) {
+//       window.clearInterval(slideTimer);
+//     }
+//   }, speed);
+// }
+
+let container = document.querySelector(".last-scroll-container");
+
+document
+  .querySelector(".right-arrow-btn")
+  .addEventListener("click", function () {
+    container.scrollLeft += "200";
+  });
+
+document
+  .querySelector(".left-arrow-btn")
+  .addEventListener("click", function () {
+    container.scrollLeft -= "200";
+  });
