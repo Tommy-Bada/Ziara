@@ -7,3 +7,32 @@ document.querySelector("#hamburger").addEventListener("click", () => {
     document.querySelector(".hamburger-line").style.width = "1.6rem";
   }
 });
+
+let menuItem = document.querySelectorAll(".nav-text");
+let menuImage = document.querySelectorAll(".nav-image");
+
+for (let i = 0; i < 3; i++) {
+  const animation = gsap.to(menuImage[i], {
+    opacity: 1,
+    duration: 0.2,
+    scale: 1,
+    ease: "ease-in-out",
+  });
+  animation.reverse();
+  menuItem[i].addEventListener("mouseenter", () => animation.play());
+  menuItem[i].addEventListener("mouseleave", () => animation.reverse());
+}
+
+function moveText(e) {
+  gsap.to([...menuImage], {
+    css: {
+      left: e.pageX + 50,
+      top: e.pageY,
+    },
+    duration: 0.3,
+  });
+}
+
+menuItem.forEach((el) => {
+  el.addEventListener("mousemove", moveText);
+});
