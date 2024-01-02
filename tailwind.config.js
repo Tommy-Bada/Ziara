@@ -6,6 +6,8 @@ module.exports = {
       backgroundImage: {
         "hero-background":
           "url('https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702305847/Ziara/heroImage_g2lbtd.png')",
+        "collection-hover-background":
+          "url('https://res.cloudinary.com/dhuoa5mmo/image/upload/v1704231270/Ziara/collection_1_jnkwyq.jpg')",
       },
       colors: {
         "background-color": "#D9D9D9",

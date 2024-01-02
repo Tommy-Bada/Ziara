@@ -1,5 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const tl = gsap.timeline();
+
 const ziaraText = new SplitType("#ziara-text");
 const ziaraTextTwo = new SplitType("#ziara-text-2");
 gsap.to(".char", {
@@ -97,21 +99,6 @@ document.querySelector("body").addEventListener("mouseover", (e) => {
 document.querySelector("body").addEventListener("mouseout", (e) => {
   cursor.classList.remove("cursor-active");
 });
-
-// function sideScroll(element, direction, speed, distance, step) {
-//   scrollAmount = 0;
-//   var slideTimer = setInterval(function () {
-//     if (direction == "left") {
-//       element.scrollLeft -= step;
-//     } else {
-//       element.scrollLeft += step;
-//     }
-//     scrollAmount += step;
-//     if (scrollAmount >= distance) {
-//       window.clearInterval(slideTimer);
-//     }
-//   }, speed);
-// }
 
 let container = document.querySelector(".last-scroll-container");
 
