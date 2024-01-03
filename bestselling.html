@@ -13,186 +13,244 @@
     />
   </head>
   <body class="bg-background-color">
-    <nav
-      class="w-0 h-[100vh] pt-[12rem] absolute bg-background-color z-10 transition-all duration-1000 ease-in overscroll-y-hidden"
-    >
-      <ul class="overflow-hidden mx-[2rem] lg:mx-[4rem]">
-        <p>
-          <a href="/" class="nav-menu"
-            ><span
-              class="text-[3.6rem] sm:text-[6.4rem] font-[700] text-transparent hover:text-brand-name-dark-color transition-all duration-1000 relative z-10 hover:z-30 ease-out nav-text"
-              >HOME</span
-            >
-            <div
-              class="h-[300px] w-[240px] bg-cover absolute z-20 opacity-0 mt-[-150px] scale-[0.4] bg-red-500 nav-image"
-            ></div
-          ></a>
-        </p>
-        <p class="my-[3rem]">
-          <a href="bestselling.html" class="nav-menu"
-            ><span
-              class="text-[3.6rem] sm:text-[6.4rem] font-[700] text-transparent hover:text-brand-name-dark-color transition-all duration-1000 relative z-10 hover:z-30 ease-out nav-text"
-              >COLLECTIONS</span
-            >
-            <div
-              class="h-[300px] w-[240px] bg-cover border-[2px] border-white border-solid absolute z-20 opacity-0 mt-[-150px] scale-[0.4] bg-collection-hover-background nav-image"
-            ></div
-          ></a>
-        </p>
-        <p>
-          <a href="#newsletter" class="nav-menu"
-            ><span
-              class="text-[3.6rem] sm:text-[6.4rem] font-[700] text-transparent hover:text-brand-name-dark-color transition-all duration-1000 relative z-10 hover:z-30 ease-out nav-text"
-              >CREDITS</span
-            >
-            <div
-              class="h-[300px] w-[240px] bg-cover absolute z-20 opacity-0 mt-[-150px] scale-[0.4] bg-red-500 nav-image"
-            ></div
-          ></a>
-        </p>
-      </ul>
-    </nav>
-    <header
-      class="flex justify-between items-center px-[2rem] lg:px-[4rem] pb-[.4rem] lg:pb-[.8rem] pt-[2rem] border-b-[1.5px] border-black relative z-20"
-    >
-      <p class="text-[2rem] lg:text-[3rem] font-[450]">ZIARA</p>
-      <div id="hamburger">
-        <div class="w-[2.2rem] h-[2px] bg-black"></div>
-        <div class="w-[2.2rem] h-[2px] bg-black my-[.4rem]"></div>
-        <div
-          class="w-[1.6rem] h-[2px] bg-black hamburger-line transition-width duration-[.4s] ease-in"
-        ></div>
-      </div>
-    </header>
-    <section
-      class="mt-[4rem] flex flex-nowrap justify-start best-selling-container px-[2rem] overflow-hidden sm:px-[4rem]"
-    >
-      <div
-        class="min-w-[100vw] h-[100vh] best-selling-item flex justify-center items-center"
+    <!-- <div
+      class="preloader top-0 left-0 h-[100vh] w-[100vw] flex items-center justify-center overflow-hidden bg-background-color z-100"
+    ></div> -->
+    <main>
+      <nav
+        class="w-0 h-[100vh] pt-[12rem] absolute bg-background-color z-10 transition-all duration-1000 ease-in overscroll-y-hidden"
       >
-        <div>
-          <img
-            src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702280892/Ziara/BlackHoodie_zo7p0z.png"
-            alt="Image of a Black Hoodie"
-            class="shop-item-image cursor-none"
-          />
-          <div class="flex justify-between mt-[1rem] lg:mt-[1.3rem]">
-            <p class="text-[1.4rem]">BLACK HOODIE</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="min-w-[100vw] h-[100vh] best-selling-item flex justify-center items-center"
-      >
-        <div>
-          <img
-            src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702284033/Ziara/baggypant_aoxd8c.png"
-            alt="image of a vintage scarf"
-            class="shop-item-image cursor-none"
-          />
-          <div class="flex justify-between mt-[1rem] lg:mt-[1.3rem]">
-            <p class="text-[1.4rem]">VINTAGE SCARF</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="min-w-[100vw] h-[100vh] best-selling-item flex justify-center items-center"
-      >
-        <div>
-          <img
-            src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702280891/Ziara/BlackHat_dhypcg.png"
-            alt="image of a black hat"
-            class="shop-item-image cursor-none"
-          />
-          <div class="flex justify-between mt-[1rem] lg:mt-[1.3rem]">
-            <p class="text-[1.4rem]">BLACK HAT</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="min-w-[100vw] h-[100vh] best-selling-item flex justify-center items-center"
-      >
-        <div>
-          <img
-            src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702280891/Ziara/Grey_Shirt_eenekj.png"
-            alt="image of a grey shirt"
-            class="shop-item-image cursor-none"
-          />
-          <div class="flex justify-between mt-[1rem] lg:mt-[1.3rem]">
-            <p class="text-[1.4rem]">GREY SHIRT</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="min-w-[100vw] h-[100vh] best-selling-item flex justify-center items-center"
-      >
-        <div>
-          <img
-            src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702280891/Ziara/Vintage_Scarf_ykkaze.png"
-            alt="image of a vintage scarf"
-            class="shop-item-image cursor-none"
-          />
-          <div class="flex justify-between mt-[1rem] lg:mt-[1.3rem]">
-            <p class="text-[1.4rem]">VINTAGE SCARF</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="min-w-[100vw] h-[100vh] best-selling-item flex justify-center items-center"
-      >
-        <div>
-          <img
-            src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702280891/Ziara/Vintage_Scarf_ykkaze.png"
-            alt="image of a vintage scarf"
-            class="shop-item-image cursor-none"
-          />
-          <div class="flex justify-between mt-[1rem] lg:mt-[1.3rem]">
-            <p class="text-[1.4rem]">VINTAGE SCARF</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="fourth-trigger">
-      <div class="leading-none relative m-[2rem] lg:m-[6rem] animation-item">
-        <p
-          class="text-box-2 text-center font-[450] text-[4rem] lg:text-[16.4rem] text-transparent hidden lg:block absolute bottom-2 left-3"
-        >
-          ZIARA.FASHION
-        </p>
-        <h1
-          class="text-center font-[450] text-[4rem] lg:text-[16.4rem] text-brand-name-dark-color head-text"
-        >
-          ZIARA.FASHION
-        </h1>
-      </div>
-      <div
-        class="border-t-[2px] border-black px-[4rem] py-[2rem] flex flex-col-reverse items-center lg:flex-row lg:justify-between"
-      >
-        <p>
-          <a href="#" class="mt-[2rem] lg:mt-0 text-[1.4rem] text-center"
-            >@ 2023. Ziara Fashion. All Rights Reserved</a
-          >
-        </p>
-        <div class="flex flex-col items-center lg:flex-row">
-          <p class="lg:mr-[2rem]">
-            <a href="#" class="text-[1.4rem]">Privacy</a>
+        <ul class="overflow-hidden mx-[2rem] lg:mx-[4rem]">
+          <p>
+            <a href="/" class="nav-menu"
+              ><span
+                class="text-[3.6rem] sm:text-[6.4rem] font-[700] text-transparent hover:text-brand-name-dark-color transition-all duration-1000 relative z-10 hover:z-30 ease-out nav-text"
+                >HOME</span
+              >
+              <div
+                class="h-[300px] w-[240px] bg-cover absolute z-20 opacity-0 mt-[-150px] scale-[0.4] bg-home-hover-background flex justify-center items-center nav-image"
+              ></div
+            ></a>
           </p>
-          <p><a href="#" class="text-[1.4rem]">Terms and Conditions</a></p>
-        </div>
-      </div>
-      <div
-        class="bg-black hidden lg:flex rounded-full w-[11rem] h-[11rem] justify-center items-center absolute pointer-events-none origin-center translate-x-[50%] translate-y-[50%] cursor opacity-0 transition-opacity duration-[0.4s]"
+          <p class="my-[2rem]">
+            <a href="bestselling.html" class="nav-menu"
+              ><span
+                class="text-[3.6rem] sm:text-[6.4rem] font-[700] text-transparent hover:text-brand-name-dark-color transition-all duration-1000 relative z-10 hover:z-30 ease-out nav-text"
+                >DRESSES</span
+              >
+              <div
+                class="h-[300px] w-[240px] bg-cover border-[2px] border-white border-solid absolute z-20 opacity-0 mt-[-150px] scale-[0.4] bg-collection-hover-background nav-image"
+              ></div
+            ></a>
+          </p>
+          <p class="my-[2rem]">
+            <a href="bestselling.html" class="nav-menu"
+              ><span
+                class="text-[3.6rem] sm:text-[6.4rem] font-[700] text-transparent hover:text-brand-name-dark-color transition-all duration-1000 relative z-10 hover:z-30 ease-out nav-text"
+                >ACCESSORIES</span
+              >
+              <div
+                class="h-[300px] w-[240px] bg-cover border-[2px] border-white border-solid absolute z-20 opacity-0 mt-[-150px] scale-[0.4] bg-accessories-hover-background nav-image"
+              ></div
+            ></a>
+          </p>
+          <p class="my-[2rem]">
+            <a href="bestselling.html" class="nav-menu"
+              ><span
+                class="text-[3.6rem] sm:text-[6.4rem] font-[700] text-transparent hover:text-brand-name-dark-color transition-all duration-1000 relative z-10 hover:z-30 ease-out nav-text"
+                >FOOTWEARS</span
+              >
+              <div
+                class="h-[300px] w-[240px] bg-cover border-[2px] border-white border-solid absolute z-20 opacity-0 mt-[-150px] scale-[0.4] bg-footwears-hover-background nav-image"
+              ></div
+            ></a>
+          </p>
+          <p>
+            <a href="#newsletter" class="nav-menu"
+              ><span
+                class="text-[3.6rem] sm:text-[6.4rem] font-[700] text-transparent hover:text-brand-name-dark-color transition-all duration-1000 relative z-10 hover:z-30 ease-out nav-text"
+                >CREDITS</span
+              >
+              <div
+                class="h-[300px] w-[240px] bg-cover absolute z-20 opacity-0 mt-[-150px] scale-[0.4] bg-white nav-image text-[2rem] flex items-center justify-center"
+              >
+                <p class="text-[3rem] text-center credits">
+                  Designed by FATIMA <br />
+                  & <br />
+                  Developed by BADA
+                </p>
+              </div></a
+            >
+          </p>
+        </ul>
+      </nav>
+      <header
+        class="flex justify-between items-center px-[2rem] lg:px-[4rem] pb-[.4rem] lg:pb-[.8rem] pt-[2rem] border-b-[1.5px] border-black relative z-20"
       >
-        <p class="text-white text-[1.2rem]">Shop Now</p>
-        <div><img src="img/cursor-arrow.svg" /></div>
-      </div>
-    </footer>
+        <p class="text-[2rem] lg:text-[3rem] font-[450]">ZIARA</p>
+        <div id="hamburger">
+          <div class="w-[2.2rem] h-[2px] bg-black"></div>
+          <div class="w-[2.2rem] h-[2px] bg-black my-[.4rem]"></div>
+          <div
+            class="w-[1.6rem] h-[2px] bg-black hamburger-line transition-width duration-[.4s] ease-in"
+          ></div>
+        </div>
+      </header>
+      <section
+        class="mt-[4rem] flex flex-nowrap justify-start best-selling-container px-[2rem] overflow-hidden sm:px-[4rem]"
+      >
+        <div
+          class="min-w-[100vw] h-[100vh] best-selling-item flex justify-center items-center"
+        >
+          <div class="flex justify-center items-end">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702284033/Ziara/baggypant_aoxd8c.png"
+                alt="image of a vintage scarf"
+                class="shop-item-image cursor-none"
+              />
+            </div>
+            <div class="max-w-[40%] ml-[3rem]">
+              <p class="text-[4.2rem] font-[450]">BAGGY PANTS</p>
+              <p class="max-w-[70%] text-[1.6rem] mt-[2rem] mb-[6rem]">
+                Get ready to embrace laid-back vibes with our Trendsetter Baggy
+                Pants – the epitome of casual cool! Perfect for the free spirits
+                and fashion-forward individuals who want to make a statement
+                without sacrificing comfort.
+              </p>
+              <p class="text-[2rem] font-[500]">$120.50</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="min-w-[100vw] h-[100vh] best-selling-item flex justify-center items-center"
+        >
+          <div class="flex justify-center items-end">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702280891/Ziara/BlackHat_dhypcg.png"
+                alt="image of a vintage scarf"
+                class="shop-item-image cursor-none"
+              />
+            </div>
+            <div class="max-w-[40%] ml-[3rem]">
+              <p class="text-[4.2rem] font-[450]">BLACK HATS</p>
+              <p class="max-w-[70%] text-[1.6rem] mt-[2rem] mb-[6rem]">
+                Step into the spotlight with our Jet Black Hats – where classic
+                elegance meets modern edge. Elevate your headwear game with
+                these sleek, versatile accessories that add a touch of mystery
+                and style to any outfit.
+              </p>
+              <p class="text-[2rem] font-[500]">$120.50</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="min-w-[100vw] h-[100vh] best-selling-item flex justify-center items-center"
+        >
+          <div class="flex justify-center items-end">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702284033/Ziara/baggypant_aoxd8c.png"
+                alt="image of a vintage scarf"
+                class="shop-item-image cursor-none"
+              />
+            </div>
+            <div class="max-w-[40%] ml-[3rem]">
+              <p class="text-[4.2rem] font-[450]">BAGGY PANTS</p>
+              <p class="max-w-[70%] text-[1.6rem] mt-[2rem] mb-[6rem]">
+                Get ready to embrace laid-back vibes with our Trendsetter Baggy
+                Pants – the epitome of casual cool! Perfect for the free spirits
+                and fashion-forward individuals who want to make a statement
+                without sacrificing comfort.
+              </p>
+              <p class="text-[2rem] font-[500]">$120.50</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="min-w-[100vw] h-[100vh] best-selling-item flex justify-center items-center"
+        >
+          <div class="flex justify-center items-end">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702284033/Ziara/baggypant_aoxd8c.png"
+                alt="image of a vintage scarf"
+                class="shop-item-image cursor-none"
+              />
+            </div>
+            <div class="max-w-[40%] ml-[3rem]">
+              <p class="text-[4.2rem] font-[450]">BAGGY PANTS</p>
+              <p class="max-w-[70%] text-[1.6rem] mt-[2rem] mb-[6rem]">
+                Get ready to embrace laid-back vibes with our Trendsetter Baggy
+                Pants – the epitome of casual cool! Perfect for the free spirits
+                and fashion-forward individuals who want to make a statement
+                without sacrificing comfort.
+              </p>
+              <p class="text-[2rem] font-[500]">$120.50</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="min-w-[100vw] h-[100vh] best-selling-item flex justify-center items-center"
+        >
+          <div class="flex justify-center items-end">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702284033/Ziara/baggypant_aoxd8c.png"
+                alt="image of a vintage scarf"
+                class="shop-item-image cursor-none"
+              />
+            </div>
+            <div class="max-w-[40%] ml-[3rem]">
+              <p class="text-[4.2rem] font-[450]">BAGGY PANTS</p>
+              <p class="max-w-[70%] text-[1.6rem] mt-[2rem] mb-[6rem]">
+                Get ready to embrace laid-back vibes with our Trendsetter Baggy
+                Pants – the epitome of casual cool! Perfect for the free spirits
+                and fashion-forward individuals who want to make a statement
+                without sacrificing comfort.
+              </p>
+              <p class="text-[2rem] font-[500]">$120.50</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="fourth-trigger">
+        <div class="leading-none relative m-[2rem] lg:m-[6rem] animation-item">
+          <p
+            class="text-box-2 text-center font-[450] text-[4rem] lg:text-[16.4rem] text-transparent hidden lg:block absolute bottom-2 left-3"
+          >
+            ZIARA.FASHION
+          </p>
+          <h1
+            class="text-center font-[450] text-[4rem] lg:text-[16.4rem] text-brand-name-dark-color head-text"
+          >
+            ZIARA.FASHION
+          </h1>
+        </div>
+        <div
+          class="border-t-[2px] border-black px-[4rem] py-[2rem] flex flex-col-reverse items-center lg:flex-row lg:justify-between"
+        >
+          <p>
+            <a href="#" class="mt-[2rem] lg:mt-0 text-[1.4rem] text-center"
+              >@ 2023. Ziara Fashion. All Rights Reserved</a
+            >
+          </p>
+          <div class="flex flex-col items-center lg:flex-row">
+            <p class="lg:mr-[2rem]">
+              <a href="#" class="text-[1.4rem]">Privacy</a>
+            </p>
+            <p><a href="#" class="text-[1.4rem]">Terms and Conditions</a></p>
+          </div>
+        </div>
+        <div
+          class="bg-black hidden lg:flex rounded-full w-[11rem] h-[11rem] justify-center items-center absolute pointer-events-none origin-center translate-x-[50%] translate-y-[50%] cursor opacity-0 transition-opacity duration-[0.4s]"
+        >
+          <p class="text-white text-[1.2rem]">Shop Now</p>
+          <div><img src="img/cursor-arrow.svg" /></div>
+        </div>
+      </footer>
+    </main>
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
     <script
