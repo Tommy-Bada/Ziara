@@ -42,9 +42,25 @@ nav {
 .nav-menu {
   -webkit-text-stroke: 3px #282828;
 }
+.credits {
+  -webkit-text-stroke: 1px black;
+}
 
 .is-active {
   width: 100%;
+}
+
+.testing {
+  scroll-snap-align: start;
+  animation: slide 10s linear infinite;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
 }
 
 @media screen and (max-width: 1024px) {
