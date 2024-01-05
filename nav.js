@@ -2,7 +2,7 @@ document.querySelector("#hamburger").addEventListener("click", () => {
   if (!document.querySelector("nav").classList.contains("is-active")) {
     document.querySelector("nav").classList.add("is-active");
     document.querySelector(".hamburger-line").style.width = "2.2rem";
-    document.querySelector("body").style.position = "fixed";
+    // document.querySelector("body").style.position = "fixed";
   } else {
     document.querySelector("nav").classList.remove("is-active");
     document.querySelector(".hamburger-line").style.width = "1.6rem";
@@ -20,9 +20,9 @@ for (let i = 0; i < 5; i++) {
     scale: 1,
     ease: "ease-in-out",
   });
-  animation.reverse();
   menuItem[i].addEventListener("mouseenter", () => animation.play());
   menuItem[i].addEventListener("mouseleave", () => animation.reverse());
+  animation.reverse();
 }
 
 function moveText(e) {
