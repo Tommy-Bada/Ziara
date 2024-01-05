@@ -1,21 +1,35 @@
 gsap.registerPlugin(ScrollTrigger);
 
-const tl = gsap.timeline();
-
 const ziaraText = new SplitType("#ziara-text");
 const ziaraTextTwo = new SplitType("#ziara-text-2");
-gsap.to(".char", {
-  scrollTrigger: {
-    trigger: "header",
-    start: "top bottom",
-    end: "center center",
-    markers: false,
-  },
+const tl = gsap.timeline();
+
+tl.to(".preloader-inner", {
+  width: "100vw",
+  duration: 5,
+  ease: "ease-in-out",
+});
+
+tl.to(".preloader-inner", {
+  height: "100vh",
+  duration: 1,
+  ease: "ease-in-out",
+});
+tl.to(".char", {
   opacity: 1,
   y: 0,
   stagger: 0.05,
   delay: 0.2,
   duration: 0.5,
+});
+tl.to(".preloader", {
+  y: "-100vh",
+  delay: 2,
+  duration: 1,
+  onComplete: function () {
+    document.querySelector(".preloader").style.display = "none";
+    document.querySelector("body").classList.remove("fixed");
+  },
 });
 
 gsap.to(".shop-item", {
