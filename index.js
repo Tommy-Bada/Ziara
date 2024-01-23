@@ -1,37 +1,4 @@
 gsap.registerPlugin(ScrollTrigger);
-
-const ziaraText = new SplitType("#ziara-text");
-const ziaraTextTwo = new SplitType("#ziara-text-2");
-const tl = gsap.timeline();
-
-tl.to(".preloader-inner", {
-  width: "100vw",
-  duration: 5,
-  ease: "ease-in-out",
-});
-
-tl.to(".preloader-inner", {
-  height: "100vh",
-  duration: 1,
-  ease: "ease-in-out",
-});
-tl.to(".char", {
-  opacity: 1,
-  y: 0,
-  stagger: 0.05,
-  delay: 0.2,
-  duration: 0.5,
-});
-tl.to(".preloader", {
-  y: "-100vh",
-  delay: 2,
-  duration: 1,
-  onComplete: function () {
-    document.querySelector(".preloader").style.display = "none";
-    document.querySelector("body").classList.remove("fixed");
-  },
-});
-
 gsap.to(".shop-item", {
   scrollTrigger: {
     trigger: ".first-trigger",
@@ -42,8 +9,9 @@ gsap.to(".shop-item", {
   },
   y: 0,
   opacity: 1,
-  duration: 1,
+  duration: 2,
   stagger: 0.1,
+  ease: "power1.inOut",
 });
 
 gsap.to(".shop-item-2", {
@@ -56,8 +24,9 @@ gsap.to(".shop-item-2", {
   },
   y: 0,
   opacity: 1,
-  duration: 1,
+  duration: 2,
   stagger: 0.2,
+  ease: "power1.inOut",
 });
 
 gsap.to(".shop-item-3", {
@@ -70,8 +39,9 @@ gsap.to(".shop-item-3", {
   },
   y: 0,
   opacity: 1,
-  duration: 1,
+  duration: 2,
   stagger: 0.2,
+  ease: "power1.inOut",
 });
 
 gsap.to(".shop-item-4", {
@@ -85,19 +55,20 @@ gsap.to(".shop-item-4", {
   x: 0,
   opacity: 1,
   duration: 1,
+  ease: "power1.inOut",
 });
 
-gsap.to(".flow-item", {
-  duration: 10,
-  ease: "linear",
-  x: "-=1640", //move each box 500px to right
-  modifiers: {
-    x: gsap.utils.unitize((x) => parseFloat(x) % 1640), //force x value to be between 0 and 500 using modulus
-  },
-  repeat: -1,
-});
+// gsap.to(".flow-item", {
+//   duration: 10,
+//   ease: "linear",
+//   x: "-=1640", //move each box 500px to right
+//   modifiers: {
+//     x: gsap.utils.unitize((x) => parseFloat(x) % 1640), //force x value to be between 0 and 500 using modulus
+//   },
+//   repeat: -1,
+// });
 
-let cursor = document.querySelector(".cursor");
+var cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
   cursor.style.left = e.pageX - cursor.offsetWidth + "px"; // Adjust the offset
   cursor.style.top = e.pageY - cursor.offsetHeight + "px";
@@ -114,7 +85,7 @@ document.querySelector("body").addEventListener("mouseout", (e) => {
   cursor.classList.remove("cursor-active");
 });
 
-let container = document.querySelector(".last-scroll-container");
+var container = document.querySelector(".last-scroll-container");
 
 document
   .querySelector(".right-arrow-btn")

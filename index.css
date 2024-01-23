@@ -10,6 +10,9 @@
   font-size: 10px;
   -webkit-font-smoothing: antialiased;
 }
+body.scroll-disabled {
+  overflow-y: hidden;
+}
 .head-text {
   clip-path: polygon(0 1%, 100% 0, 100% 100%, 0% 100%);
 }
@@ -36,8 +39,10 @@
 .text-box-2 {
   -webkit-text-stroke: 3px #282828;
 }
-nav {
-  position: fixed;
+/* nav,
+.pre-loader, */
+.loader {
+  position: fixed !important;
 }
 .nav-menu {
   -webkit-text-stroke: 3px #282828;
@@ -47,7 +52,7 @@ nav {
 }
 
 .is-active {
-  width: 100%;
+  width: 100vw;
 }
 
 .testing {
