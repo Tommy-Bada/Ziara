@@ -3295,6 +3295,10 @@ body.scroll-disabled {
     font-size: 6.4rem;
   }
 
+  .lg\:text-transparent {
+    color: transparent;
+  }
+
   .group:hover .lg\:group-hover\:w-\[12\.4rem\] {
     width: 12.4rem;
   }
