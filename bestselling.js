@@ -1,18 +1,20 @@
 gsap.registerPlugin(ScrollTrigger);
 
 var sections = gsap.utils.toArray(".best-selling-item");
-gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".best-selling-container",
-    pin: true,
-    scrub: 1,
-    snap: 1 / (sections.length - 1),
-    end: () =>
-      "+=" + document.querySelector(".best-selling-container").offsetWidth,
-  },
-});
+if (window.matchMedia("(min-width: 720px)").matches) {
+  gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".best-selling-container",
+      pin: true,
+      scrub: 1,
+      snap: 1 / (sections.length - 1),
+      end: () =>
+        "+=" + document.querySelector(".best-selling-container").offsetWidth,
+    },
+  });
+}
 
 var cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
