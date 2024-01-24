@@ -1,3 +1,4 @@
+console.log("best selling is working");
 gsap.registerPlugin(ScrollTrigger);
 
 var sections = gsap.utils.toArray(".best-selling-item");
