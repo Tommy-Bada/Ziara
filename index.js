@@ -96,13 +96,15 @@ document
       gsap.to(".shop-item-4", {
         x: 0,
         duration: 1,
+        stagger: -0.02,
+        ease: "ease-in-out",
       });
     } else {
       gsap.to(".shop-item-4", {
         x: currentPosition,
-        duration: 1,
-        stagger: 0.1,
-        ease: "power2.out",
+        duration: 2,
+        stagger: 0.05,
+        ease: "power2.inOut",
       });
     }
   });
@@ -110,13 +112,16 @@ document
 document
   .querySelector(".left-arrow-btn")
   .addEventListener("click", function () {
-    // currentPosition += 410;
-    gsap.to(".shop-item-4", {
-      x: 0,
-      duration: 2,
-      ease: "power2.in",
-      onComplete: () => {
-        currentPosition = 0;
-      },
-    });
+    currentPosition += 410;
+    if (currentPosition >= 410) {
+      currentPosition = 0;
+      return;
+    } else {
+      gsap.to(".shop-item-4", {
+        x: currentPosition,
+        duration: 2,
+        stagger: -0.05,
+        ease: "power2.inOut",
+      });
+    }
   });
