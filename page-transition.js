@@ -4,7 +4,8 @@ function reinitializeScripts() {
   // Create a mapping between pages and their corresponding script files
   const scriptMappings = {
     "/": ["nav.js", "index.js"],
-    "/bestselling.html": ["nav.js", "bestselling.js"],
+    "/allcollections.html": ["nav.js", "allcollections.js"],
+    "/credits.html": ["nav.js"],
     // Add other pages and script files as needed
   };
   document.querySelector("body").style.position = "static";
