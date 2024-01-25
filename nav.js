@@ -13,7 +13,7 @@ document.querySelector("#hamburger").addEventListener("click", () => {
 var menuItem = document.querySelectorAll(".nav-text");
 var menuImage = document.querySelectorAll(".nav-image");
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 3; i++) {
   const animation = gsap.to(menuImage[i], {
     opacity: 1,
     duration: 0.2,
