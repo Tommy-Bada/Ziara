@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZIARA</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/fivo-sans-modern"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    data-barba="wrapper"
+    class="bg-background-color w-[100vw] overflow-x-hidden scroll-disabled"
+  >
+    <div
+      class="preloader absolute h-[100vh] w-[100vw] flex justify-center items-center bg-black z-50"
+    >
+      <div
+        class="preloader-inner leading-none relative bg-background-color w-[1px] h-[2px] px-8 z-50 overflow-hidden flex flex-col justify-center items-center"
+      >
+        <div
+          class="leading-none relative px-8 z-50 overflow-hidden flex flex-col justify-center items-center"
+        >
+          <p
+            class="text-box-2 text-center font-[450] text-transparent hidden md:block absolute bottom-2 left-4"
+            id="ziara-text-2"
+          >
+            ZIARA.FASHION
+          </p>
+          <h1
+            class="text-center font-[450] text-brand-name-dark-color head-text"
+            id="ziara-text"
+          >
+            ZIARA.FASHION
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-black w-[100vw] h-[100vh] absolute pointer-events-none z-30 opacity-0 loader flex items-center justify-center"
+    >
+      <p class="text-white text-[6rem] text-center loader-text">ZIARA</p>
+    </div>
+    <main class="bg-background-color relative" data-barba="container">
+      <header
+        class="flex justify-between items-center px-[2rem] lg:px-[4rem] pb-[.4rem] lg:pb-[.8rem] pt-[2rem] border-b-[1.5px] border-black bg-background-color relative z-20"
+      >
+        <p class="text-[2rem] lg:text-[3rem] font-[450]">ZIARA</p>
+        <div id="hamburger">
+          <div class="w-[2.2rem] h-[2px] bg-black"></div>
+          <div class="w-[2.2rem] h-[2px] bg-black my-[.4rem]"></div>
+          <div
+            class="w-[1.6rem] h-[2px] bg-black hamburger-line transition-width duration-[.4s] ease-in"
+          ></div>
+        </div>
+      </header>
+      <nav
+        class="w-0 h-[100vh] pt-[4rem] bg-background-color absolute z-10 transition-all duration-1000 ease-in overscroll-y-hidden"
+      >
+        <ul class="overflow-hidden mx-[2rem] lg:mx-[4rem]">
+          <p>
+            <a href="/" class="nav-menu"
+              ><span
+                class="text-[3.6rem] sm:text-[6.4rem] font-[700] lg:text-transparent hover:text-brand-name-dark-color transition-all duration-1000 relative z-10 hover:z-30 ease-out nav-text home"
+                >HOME</span
+              >
+              <div
+                class="hidden h-[300px] w-[240px] bg-cover absolute z-20 opacity-0 mt-[-150px] scale-[0.4] bg-home-hover-background lg:flex justify-center items-center nav-image"
+              ></div
+            ></a>
+          </p>
+          <p class="my-[2rem]">
+            <a href="/allcollections.html" class="nav-menu"
+              ><span
+                class="text-[3.6rem] sm:text-[6.4rem] font-[700] lg:text-transparent hover:text-brand-name-dark-color transition-all duration-1000 relative z-10 hover:z-30 ease-out nav-text"
+                >COLLECTIONS</span
+              >
+              <div
+                class="hidden h-[300px] w-[240px] bg-cover absolute z-20 opacity-0 mt-[-150px] scale-[0.4] bg-collection-hover-background lg:flex justify-center items-center nav-image"
+              ></div
+            ></a>
+          </p>
+          <p>
+            <a href="/credits.html" class="nav-menu"
+              ><span
+                class="text-[3.6rem] sm:text-[6.4rem] font-[700] lg:text-transparent hover:text-brand-name-dark-color transition-all duration-1000 relative z-10 hover:z-30 ease-out nav-text home"
+                >CREDITS</span
+              >
+              <div
+                class="h-[300px] w-[240px] bg-cover absolute z-20 opacity-0 mt-[-150px] scale-[0.4] bg-white nav-image text-[2rem] flex items-center justify-center"
+              >
+                <p class="text-[3rem] text-center credits">
+                  Designed by FATIMA <br />
+                  & <br />
+                  Developed by BADA
+                </p>
+              </div></a
+            >
+          </p>
+        </ul>
+      </nav>
+      <section class="p-[2rem] sm:p-[4rem]">
+        <div class="block sm:flex flex-wrap justify-between items-start">
+          <div class="mb-[5rem]">
+            <p class="font-[450] text-[2rem]">Design:</p>
+            <h1 class="font-[700] text-[3rem]">Fatima Aminu</h1>
+            <div class="flex gap-4">
+              <div><i class="fa-brands fa-x-twitter fa-2xl"></i></div>
+              <div><i class="fa-brands fa-linkedin-in fa-2xl"></i></div>
+              <div><i class="fa-brands fa-whatsapp fa-2xl"></i></div>
+              <div><i class="fa-regular fa-envelope fa-2xl"></i></div>
+              <div><i class="fa-brands fa-behance fa-2xl"></i></div>
+            </div>
+          </div>
+          <div class="mb-[5rem]">
+            <p class="font-[450] text-[2rem]">Development:</p>
+            <h1 class="font-[700] text-[3rem]">Tomiwa Bada</h1>
+            <div class="flex gap-4">
+              <div><i class="fa-brands fa-x-twitter fa-2xl"></i></div>
+              <div><i class="fa-brands fa-linkedin-in fa-2xl"></i></div>
+              <div><i class="fa-brands fa-whatsapp fa-2xl"></i></div>
+              <div><i class="fa-regular fa-envelope fa-2xl"></i></div>
+              <div><i class="fa-brands fa-github fa-2xl"></i></div>
+            </div>
+          </div>
+          <div class="mb-[5rem]">
+            <p class="font-[450] text-[2rem]">Technologies and Libraries:</p>
+            <p class="text-[2.4rem] font-[700]">Vanilla JavaScript</p>
+            <p class="text-[2.4rem] font-[700]">TailwindCSS</p>
+            <p class="text-[2.4rem] font-[700]">Font Awesome</p>
+            <p class="text-[2.4rem] font-[700]">GSAP</p>
+            <p class="text-[2.4rem] font-[700]">Barba.js</p>
+          </div>
+        </div>
+        <div class="block sm:flex flex-wrap justify-around items-start">
+          <div class="mb-[5rem]">
+            <p class="font-[450] text-[2rem]">Font:</p>
+            <p class="text-[2.4rem] font-[700]">fivo-sans-modern</p>
+          </div>
+          <div class="mb-[5rem]">
+            <p class="font-[450] text-[2rem]">Image Credit:</p>
+            <p class="text-[2.4rem] font-[700]">Go and ask Fatima please!</p>
+            <div class="">
+              <img
+                src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1706181143/Ziara/idontknow_rbt0uk.jpg"
+                alt="druski mail"
+                class="h-[200px] w-[150px] bg-cover border-[2px] border-black border-solid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+      integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="preloader.js"></script>
+    <script src="nav.js"></script>
+    <script src="page-transition.js"></script>
+  </body>
+</html>
