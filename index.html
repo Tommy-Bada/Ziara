@@ -11,8 +11,16 @@
       href="https://fonts.cdnfonts.com/css/fivo-sans-modern"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body data-barba="wrapper" class="bg-background-color w-[100vw] overflow-x-hidden scroll-disabled">
+    <!-- Preloader element -->
     <div
       class="preloader fixed h-[100vh] w-[100vw] flex justify-center items-center bg-black z-50"
     >
@@ -37,8 +45,11 @@
         </div>
       </div>
     </div>
+    <!-- Page transiton element -->
     <div class="bg-black w-[100vw] h-[100vh] absolute pointer-events-none z-30 opacity-0 loader flex items-center justify-center"><p class="text-white text-[6rem] text-center loader-text">ZIARA</p></div>
+    <!-- Main page content -->
     <main class="bg-background-color relative" data-barba="container">
+      <!-- Header -->
     <header
       class="flex justify-between items-center px-[2rem] lg:px-[4rem] pb-[.4rem] lg:pb-[.8rem] pt-[2rem] border-b-[1.5px] border-black bg-background-color relative  z-20"
     >
@@ -49,6 +60,7 @@
         <div class="w-[1.6rem] h-[2px] bg-black hamburger-line transition-width duration-[.4s] ease-in"></div>
       </div>
     </header>
+    <!-- Navigation Bar -->
     <nav
       class="w-0 h-[100vh] pt-[4rem] bg-background-color absolute z-10 transition-all duration-1000 ease-in overscroll-y-hidden"
       >
@@ -94,7 +106,7 @@
           </p>
         </ul>
       </nav>
-
+<!-- Hero Section -->
     <section
       class="bg-hero-background bg-no-repeat bg-center h-[70vh] sm:h-[55vh] lg:h-[72rem] m-[2rem] lg:m-[4rem] flex flex-col justify-between items-center py-[4rem] sm:py-[5rem] lg:py-[7rem] first-section"
     >
@@ -112,13 +124,17 @@
           ZIARA.FASHION
         </h1>
       </div>
+      <a href="/allcollections.html" class="v-nav">
       <div
         class="flex items-center justify-center bg-white rounded-full w-[max-content] p-[1.5rem] lg:p-[2rem] mx-auto"
       >
         <p class="text-[1.8rem] lg:text-[2rem] mr-[.8rem]">View Collection</p>
         <div><img src="/img/right.svg" /></div>
       </div>
+    </a>
     </section>
+
+    <!-- Infinite horizontal animation, definitely not the optimal way -->
     <div class="relative overflow-hidden mt-[2rem] lg:mt-[4rem] mb-[4rem] whitespace-nowrap" >
     <section
       class="flex items-center pl-[2rem] lg:pl-[4rem] flex-nowrap  w-[max-content] lg:mb-[8rem] testing "
@@ -191,6 +207,8 @@
       </div>
     </section>
     </div>
+
+    <!-- Best selling collection -->
     <section class="my-[2rem] lg:my-[4rem] mx-[2rem] lg:mx-[4rem] first-trigger " id="first-trigger">
       <div class="flex flex-wrap justify-between items-center">
         <h2
@@ -219,7 +237,7 @@
           />
           <div class="flex justify-between mt-[1rem] lg:mt-[1.3rem]">
             <p class="text-[1.4rem]">BLACK HOODIE</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
+            <p class="text-[1.4rem] font-[600]">$130.00</p>
           </div>
         </div>
         <div class="w-[max-content] shop-item">
@@ -230,7 +248,7 @@
           />
           <div class="flex justify-between mt-[1rem] lg:mt-[1.3rem]">
             <p class="text-[1.4rem]">BLACK HAT</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
+            <p class="text-[1.4rem] font-[600]">$122.50</p>
           </div>
         </div>
         <div class="w-[max-content] shop-item">
@@ -241,7 +259,7 @@
           />
           <div class="flex justify-between mt-[1rem] lg:mt-[1.3rem]">
             <p class="text-[1.4rem]">GREY SHIRT</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
+            <p class="text-[1.4rem] font-[600]">$189.99</p>
           </div>
         </div>
         <div class="w-[max-content] shop-item">
@@ -257,6 +275,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Multiple collection section -->
     <section class="my-[4rem] mx-[2rem] lg:mx-[4rem] second-trigger" id="second-trigger">
       <h2 class="text-[3rem] lg:text-[6.4rem] leading-none">OUR COLLECTION</h2>
       <ul class="flex flex-wrap mt-[2rem] mb-[2rem]">
@@ -284,7 +304,7 @@
           />
           <div class="flex justify-between mt-[1rem] lg:mt-[1.3rem]">
             <p class="text-[1.4rem]">BAGGY PANT</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
+            <p class="text-[1.4rem] font-[600]">$220.50</p>
           </div>
         </div>
         <div class="shop-item-2">
@@ -293,8 +313,8 @@
             class="shop-item-image cursor-none"
           />
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
-            <p class="text-[1.4rem]">GREY COMFY FIT</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
+            <p class="text-[1.4rem]">GREY PANT</p>
+            <p class="text-[1.4rem] font-[600]">$149.55</p>
           </div>
         </div>
         <div class="shop-item-2">
@@ -303,8 +323,8 @@
             class="shop-item-image cursor-none"
           />
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
-            <p class="text-[1.4rem]">BLACK COMFY FIT</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
+            <p class="text-[1.4rem]">BLACK SLEEVES</p>
+            <p class="text-[1.4rem] font-[600]">$124.00</p>
           </div>
         </div>
         <div class="shop-item-3 ">
@@ -313,8 +333,8 @@
             class="shop-item-image cursor-none"
           />
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
-            <p class="text-[1.4rem]">GLOW FIT</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
+            <p class="text-[1.4rem]">GLOW BODYHUG</p>
+            <p class="text-[1.4rem] font-[600]">$160.49</p>
           </div>
         </div>
         <div class="shop-item-3">
@@ -323,8 +343,8 @@
             class="shop-item-image cursor-none"
           />
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
-            <p class="text-[1.4rem]">ARMLESS FIT</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
+            <p class="text-[1.4rem]">ELETRIC NIGHT SHIRT</p>
+            <p class="text-[1.4rem] font-[600]">$180.00</p>
           </div>
         </div>
         <div class="shop-item-3">
@@ -334,23 +354,27 @@
           />
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
             <p class="text-[1.4rem]">MONALISA PAINING ON A SHIRT</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
+            <p class="text-[1.4rem] font-[600]">$90.99</p>
           </div>
         </div>
       </div>
       <div class="w-[max-content] mx-auto">
         <img src="/img/curve-arrow.svg" />
         <div class="group h-[5rem] w-[17rem]">
+          <a href="/allcollections.html" class="v-nav-2">
         <div
-          class="flex items-center justify-center py-[1.5rem] px-[3rem] bg-white border-black border-[1px] rounded-full w-[max-content]"
+          class="flex items-center justify-center py-[1.5rem] px-[3rem] bg-white border-black border-[1px] rounded-full w-[max-content] relative z-10"
         >
           <p class="text-[1.2rem]">Explore More</p>
           <div><img src="/img/explore-icon.svg" /></div>
         </div>
-        <div class="bg-black w-[17rem] h-[5rem] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-[.6s] ease-in-out relative bottom-[4.4rem] -z-10 "></div>
+      </a>
+        <div class="bg-black w-[17rem] h-[5rem] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-[.6s] ease-in-out relative bottom-[4.4rem] z-0 "></div>
         </div>
       </div>
     </section>
+
+    <!-- Simplicity and Final Section -->
     <section class="my-[4rem] mx-[2rem] lg:mx-[4rem] third-trigger">
       <div class="flex justify-between items-center mb-[2rem] lg:mb-[4rem]">
         <h2 class="text-[2rem] lg:text-[4.8rem] font-[450] leading-none">
@@ -365,21 +389,21 @@
         <div class="min-w-[max-content] shop-item-4 " >
           <img src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702308722/Ziara/stylish-cooperate_gcxvpc.png" class="shop-item-image cursor-none"/>
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
-            <p class="text-[1.4rem]">MONALISA PAINING ON A SHIRT</p>
-            <p class="text-[1.4rem] font-[600]">$120.50</p>
+            <p class="text-[1.4rem]">ELEGANCE BLAZER</p>
+            <p class="text-[1.4rem] font-[600]">$140.50</p>
           </div>
         </div>
         <div class="min-w-[max-content] shop-item-4 ">
           <img src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702308722/Ziara/sky_blue_hoodie_wedkye.png" class="shop-item-image cursor-none"/>
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
-            <p class="text-[1.4rem]">MONALISA PAINING ON A SHIRT</p>
+            <p class="text-[1.4rem]">DREAMER HOODIE</p>
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
         <div class="min-w-[max-content] shop-item-4 ">
           <img src="https://res.cloudinary.com/dhuoa5mmo/image/upload/v1702308721/Ziara/fancy-gown_bpjnrg.png" class="shop-item-image cursor-none"/>
           <div class="flex mt-[1rem] lg:mt-[1.3rem] justify-between">
-            <p class="text-[1.4rem]">MONALISA PAINING ON A SHIRT</p>
+            <p class="text-[1.4rem]">ETHEREAL GOWN</p>
             <p class="text-[1.4rem] font-[600]">$120.50</p>
           </div>
         </div>
@@ -413,6 +437,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Email Subscription Section -->
     <section class="flex flex-wrap justify-between px-[2rem] lg:px-[8rem] py-[4rem] lg:py-[8rem]" id="newsletter">
       <h2 class="text-[3rem] lg:text-[5.4rem] w-[100%] lg:w-[45%] font-[450] leading-tight">Stay up-to-date with the latest trends in Fashion</h2>
       <div class="w-[100%] lg:w-[40%]">
@@ -425,21 +451,19 @@
           <input type="email" placeholder="e.g. teemahbae@gmail.com" class="px-[1.2rem] py-[1.5rem] bg-transparent border-b-[1px] w-[80%] lg:w-[100%] border-black focus:outline-none text-[1.4rem]"/>
           <div class="group h-[4.4rem] w-[13.7rem]">
           <div
-          class="flex items-center justify-center py-[1.2rem] px-[2.4rem] bg-white border-black border-[1px] rounded-full w-[max-content] mt-[3rem] lg:mt-[8rem]"
+          class="flex items-center justify-center py-[1.2rem] px-[2.4rem] bg-white border-black border-[1px] rounded-full w-[max-content] mt-[3rem] lg:mt-[8rem] relative z-10"
         >
           <p class="text-[1.2rem]">Subscribe</p>
           <div><img src="/img/explore-icon.svg" /></div>
         </div>
-        <div class="bg-black w-[13.7rem] h-[4.4rem] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-[.6s] ease-in-out relative bottom-[3.8rem] -z-10 "></div>
+        <div class="bg-black w-[13.7rem] h-[4.4rem] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-[.6s] ease-in-out relative bottom-[3.8rem] z-0 "></div>
         </div>
         </form>
       </div>
     </section>
+
+    <!-- Footer -->
     <footer class="fourth-trigger" >
-      <!-- <div class="leading-none relative m-[2rem] lg:m-[6rem] animation-item">
-        <p class="text-box-2 text-center font-[450] text-[4rem] lg:text-[16.4rem] text-transparent hidden lg:block absolute bottom-2 left-3">ZIARA.FASHION</p>
-      <h1 class="text-center font-[450] text-[4rem] lg:text-[16.4rem] text-brand-name-dark-color head-text">ZIARA.FASHION</h1>
-      </div> -->
       <div class="flex justify-center" >
       <div
         class="leading-none relative px-8 z-0 overflow-hidden flex flex-col justify-center items-center"
@@ -463,6 +487,8 @@
           <p ><a href="#" class="text-[1.4rem]">Terms and Conditions</a></p>
         </div>
       </div>
+
+      <!-- Custom cursor -->
       <div class="bg-black hidden lg:flex rounded-full w-[11rem] h-[11rem] justify-center items-center absolute pointer-events-none origin-center translate-x-[50%] translate-y-[50%] cursor opacity-0 transition-opacity duration-[0.4s]">
         <p class="text-white text-[1.2rem]">Shop Now</p>
         <div><img src="img/cursor-arrow.svg" /></div>

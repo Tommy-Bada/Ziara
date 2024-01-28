@@ -657,48 +657,8 @@ video {
   inset-inline-end: 0.25rem;
 }
 
-.left-3 {
-  left: 0.75rem;
-}
-
 .left-4 {
   left: 1rem;
-}
-
-.left-1 {
-  left: 0.25rem;
-}
-
-.left-2 {
-  left: 0.5rem;
-}
-
-.left-\[2px\] {
-  left: 2px;
-}
-
-.left-\[1px\] {
-  left: 1px;
-}
-
-.right-1 {
-  right: 0.25rem;
-}
-
-.right-\[1px\] {
-  right: 1px;
-}
-
-.right-\[2px\] {
-  right: 2px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.bottom-4 {
-  bottom: 1rem;
 }
 
 .isolate {
@@ -707,10 +667,6 @@ video {
 
 .isolation-auto {
   isolation: auto;
-}
-
-.-z-10 {
-  z-index: -10;
 }
 
 .z-0 {
@@ -953,6 +909,10 @@ video {
   height: 11rem;
 }
 
+.h-\[200px\] {
+  height: 200px;
+}
+
 .h-\[2px\] {
   height: 2px;
 }
@@ -971,14 +931,6 @@ video {
 
 .h-\[70vh\] {
   height: 70vh;
-}
-
-.h-\[250px\] {
-  height: 250px;
-}
-
-.h-\[200px\] {
-  height: 200px;
 }
 
 .w-0 {
@@ -1003,6 +955,10 @@ video {
 
 .w-\[13\.7rem\] {
   width: 13.7rem;
+}
+
+.w-\[150px\] {
+  width: 150px;
 }
 
 .w-\[17rem\] {
@@ -1044,14 +1000,6 @@ video {
 
 .w-\[weird-and-invalid\] {
   width: weird-and-invalid;
-}
-
-.w-\[200px\] {
-  width: 200px;
-}
-
-.w-\[150px\] {
-  width: 150px;
 }
 
 .min-w-\[100vw\] {
@@ -1615,20 +1563,16 @@ video {
   justify-items: stretch;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-\[2rem\] {
   gap: 2rem;
 }
 
 .gap-\[3rem\] {
   gap: 3rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-4 {
-  gap: 1rem;
 }
 
 .gap-x-\[2rem\] {
@@ -2093,11 +2037,6 @@ video {
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
-.border-white {
-  --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-
 .bg-\[rgb\(255\2c 0\2c 0\)\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
@@ -2122,21 +2061,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
-.bg-accessories-hover-background {
-  background-image: url('https://res.cloudinary.com/dhuoa5mmo/image/upload/v1704282902/Ziara/accessories4_z82xbp.jpg');
-}
-
 .bg-collection-hover-background {
   background-image: url('https://res.cloudinary.com/dhuoa5mmo/image/upload/v1704231270/Ziara/collection_1_jnkwyq.jpg');
-}
-
-.bg-footwears-hover-background {
-  background-image: url('https://res.cloudinary.com/dhuoa5mmo/image/upload/v1704282396/Ziara/footwears_rlk7iw.jpg');
 }
 
 .bg-hero-background {
@@ -2169,10 +2095,6 @@ video {
 
 .bg-cover {
   background-size: cover;
-}
-
-.bg-contain {
-  background-size: contain;
 }
 
 .bg-fixed {
@@ -2347,14 +2269,6 @@ video {
   padding-top: 4rem;
 }
 
-.pl-\[1px\] {
-  padding-left: 1px;
-}
-
-.pl-\[2px\] {
-  padding-left: 2px;
-}
-
 .text-left {
   text-align: left;
 }
@@ -2431,6 +2345,10 @@ video {
   font-size: 16.4rem;
 }
 
+.text-\[2\.4rem\] {
+  font-size: 2.4rem;
+}
+
 .text-\[2rem\] {
   font-size: 2rem;
 }
@@ -2453,10 +2371,6 @@ video {
 
 .text-\[6rem\] {
   font-size: 6rem;
-}
-
-.text-\[2\.4rem\] {
-  font-size: 2.4rem;
 }
 
 .font-\[400\] {
@@ -2585,11 +2499,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -2991,9 +2900,9 @@ body.scroll-disabled {
 /* nav,
 .pre-loader, */
 
-.loader {
+/* .loader {
   position: fixed !important;
-}
+} */
 
 .nav-menu {
   -webkit-text-stroke: 3px #282828;
@@ -3032,7 +2941,7 @@ body.scroll-disabled {
 @media screen and (max-width: 640px) {
   .char {
     transform: translateY(5rem);
-    font-size: 3.6rem;
+    font-size: 4.2rem;
   }
 
   .nav-menu {
@@ -3043,7 +2952,7 @@ body.scroll-disabled {
 @media screen and (max-width: 360px) {
   .char {
     transform: translateY(5rem);
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 }
 
@@ -3159,10 +3068,6 @@ body.scroll-disabled {
     justify-content: center;
   }
 
-  .sm\:justify-around {
-    justify-content: space-around;
-  }
-
   .sm\:gap-\[4rem\] {
     gap: 4rem;
   }
@@ -3241,10 +3146,6 @@ body.scroll-disabled {
 @media (min-width: 1024px) {
   .lg\:m-\[4rem\] {
     margin: 4rem;
-  }
-
-  .lg\:m-\[6rem\] {
-    margin: 6rem;
   }
 
   .lg\:mx-\[4rem\] {

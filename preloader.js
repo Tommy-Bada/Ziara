@@ -2,6 +2,7 @@ var ziaraText = new SplitType("#ziara-text");
 var ziaraTextTwo = new SplitType("#ziara-text-2");
 var tl = gsap.timeline();
 
+//Page preloader animation
 tl.to(".preloader-inner", {
   width: "100vw",
   duration: 5,

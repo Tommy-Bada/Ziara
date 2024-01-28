@@ -1,3 +1,4 @@
+// Hamburger click function for navbar opening and closing
 document.querySelector("#hamburger").addEventListener("click", () => {
   if (!document.querySelector("nav").classList.contains("is-active")) {
     document.querySelector("nav").classList.add("is-active");
@@ -10,9 +11,9 @@ document.querySelector("#hamburger").addEventListener("click", () => {
   }
 });
 
+// Image on text hover animation
 var menuItem = document.querySelectorAll(".nav-text");
 var menuImage = document.querySelectorAll(".nav-image");
-
 for (let i = 0; i < 3; i++) {
   const animation = gsap.to(menuImage[i], {
     opacity: 1,
@@ -25,6 +26,7 @@ for (let i = 0; i < 3; i++) {
   animation.reverse();
 }
 
+//Function to move Image along with cursor
 function moveText(e) {
   gsap.to([...menuImage], {
     css: {
@@ -39,6 +41,7 @@ menuItem.forEach((el) => {
   el.addEventListener("mousemove", moveText);
 });
 
+//Click function to prevent default reload when current page is clicked in the nav.
 document.querySelector("ul").addEventListener("click", function (event) {
   if (event.target.parentElement.classList.contains("nav-menu")) {
     if (

@@ -1,4 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
+
+//Animate first set of images on scroll into view
 gsap.from(".shop-item", {
   scrollTrigger: {
     trigger: ".first-trigger",
@@ -14,6 +16,7 @@ gsap.from(".shop-item", {
   duration: 3,
 });
 
+//Animate second set of images on scroll into view
 gsap.from(".shop-item-2", {
   scrollTrigger: {
     trigger: ".second-trigger",
@@ -25,10 +28,11 @@ gsap.from(".shop-item-2", {
   y: 150,
   opacity: 0,
   duration: 2,
-  stagger: 0.2,
+  stagger: 0.1,
   ease: "power1.inOut",
 });
 
+//Animate third set of images on scroll into view
 gsap.from(".shop-item-3", {
   scrollTrigger: {
     trigger: ".second-trigger",
@@ -44,6 +48,7 @@ gsap.from(".shop-item-3", {
   ease: "power1.inOut",
 });
 
+//Animate fourth set of images on scroll into view
 gsap.from(".shop-item-4", {
   scrollTrigger: {
     trigger: ".third-trigger",
@@ -57,6 +62,7 @@ gsap.from(".shop-item-4", {
   ease: "power1.inOut",
 });
 
+// This is supposed to animate the infinite scroll
 // gsap.to(".flow-item", {
 //   duration: 10,
 //   ease: "linear",
@@ -67,12 +73,14 @@ gsap.from(".shop-item-4", {
 //   repeat: -1,
 // });
 
+//Custom cursor function to move with mousemove, but hidden
 var cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", (e) => {
   cursor.style.left = e.pageX - cursor.offsetWidth + "px"; // Adjust the offset
   cursor.style.top = e.pageY - cursor.offsetHeight + "px";
 });
 
+//Function to show custom cursor on hover on images
 document.querySelector("body").addEventListener("mouseover", (e) => {
   if (e.target.classList.contains("shop-item-image")) {
     cursor.classList.add("cursor-active");
@@ -80,13 +88,17 @@ document.querySelector("body").addEventListener("mouseover", (e) => {
     cursor.classList.remove("cursor-active");
   }
 });
+
+//Function to hide custom cursor on outside hover images
 document.querySelector("body").addEventListener("mouseout", (e) => {
   cursor.classList.remove("cursor-active");
 });
 
+//Simplicity Section function to animate each image on arrow click
 var container = document.querySelector(".last-scroll-container");
 var currentPosition = 0;
 
+//Right arrow click
 document
   .querySelector(".right-arrow-btn")
   .addEventListener("click", function () {
@@ -109,6 +121,7 @@ document
     }
   });
 
+//Left arrow click
 document
   .querySelector(".left-arrow-btn")
   .addEventListener("click", function () {

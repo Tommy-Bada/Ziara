@@ -41,9 +41,9 @@ body.scroll-disabled {
 }
 /* nav,
 .pre-loader, */
-.loader {
+/* .loader {
   position: fixed !important;
-}
+} */
 .nav-menu {
   -webkit-text-stroke: 3px #282828;
 }
@@ -78,7 +78,7 @@ body.scroll-disabled {
 @media screen and (max-width: 640px) {
   .char {
     transform: translateY(5rem);
-    font-size: 3.6rem;
+    font-size: 4.2rem;
   }
   .nav-menu {
     -webkit-text-stroke: 2px #282828;
@@ -88,6 +88,6 @@ body.scroll-disabled {
 @media screen and (max-width: 360px) {
   .char {
     transform: translateY(5rem);
-    font-size: 2.8rem;
+    font-size: 3rem;
   }
 }

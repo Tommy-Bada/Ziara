@@ -1,3 +1,4 @@
+// Function to Re-initialize script files again because of how Barba js doesn't initialize script when you use it for transition
 function reinitializeScripts() {
   // Extract the current page URL
   const currentPage = window.location.pathname;
@@ -6,7 +7,6 @@ function reinitializeScripts() {
     "/": ["nav.js", "index.js"],
     "/allcollections.html": ["nav.js", "allcollections.js"],
     "/credits.html": ["nav.js"],
-    // Add other pages and script files as needed
   };
   document.querySelector("body").style.position = "static";
 
@@ -40,6 +40,7 @@ function removeExistingScripts(newScriptFiles) {
   });
 }
 
+//Page transition loader scaled to 0 vertically
 gsap.set(".loader", {
   scaleY: 0,
   transformOrigin: "top top",
@@ -47,9 +48,9 @@ gsap.set(".loader", {
   autoAlpha: 1,
 });
 
+// GSAP animation to stretch the loading screen across the whole screen with inner text animation too
 function loaderIn() {
   document.querySelector("body").style.position = "fixed";
-  // GSAP tween to stretch the loading screen across the whole screen
   const tl = gsap.timeline();
   return tl
     .fromTo(
@@ -74,12 +75,13 @@ function loaderIn() {
       { opacity: 1, duration: 0.5, y: 0, ease: "power2.out" }
     );
 }
+
+//GSAP amimation to hide loading screen
 function loaderAway(onCompleteCallback) {
   const tl = gsap.timeline({
     onComplete: onCompleteCallback,
   });
 
-  // GSAP tween to hide loading screen
   return tl.to(".loader", {
     duration: 1.5,
     scaleY: 0,
@@ -89,20 +91,22 @@ function loaderAway(onCompleteCallback) {
   });
 }
 
-function afterEnter() {
-  return gsap.to("body", {
-    delay: 4,
-  });
-}
+//GSAP animation to
+// function afterEnter() {
+//   return gsap.to("body", {
+//     delay: 4,
+//   });
+// }
 
-function closeNav() {
-  return gsap.to("nav", {
-    width: 0,
-    duration: 2,
-    ease: "ease-in-out",
-  });
-}
+// function closeNav() {
+//   return gsap.to("nav", {
+//     width: 0,
+//     duration: 2,
+//     ease: "ease-in-out",
+//   });
+// }
 
+//Function to trigger page transition with Barba js when the page navigated to is different from the current page
 document.querySelector("ul").addEventListener("click", function (event) {
   if (
     event.target.parentElement.getAttribute("href") !== window.location.pathname
@@ -122,4 +126,38 @@ document.querySelector("ul").addEventListener("click", function (event) {
       ],
     });
   }
+});
+
+document.querySelector(".v-nav").addEventListener("click", function (event) {
+  barba.init({
+    transitions: [
+      {
+        async leave() {
+          await loaderIn();
+        },
+        beforeEnter() {
+          loaderAway(() => {
+            reinitializeScripts();
+          });
+        },
+      },
+    ],
+  });
+});
+
+document.querySelector(".v-nav-2").addEventListener("click", function (event) {
+  barba.init({
+    transitions: [
+      {
+        async leave() {
+          await loaderIn();
+        },
+        beforeEnter() {
+          loaderAway(() => {
+            reinitializeScripts();
+          });
+        },
+      },
+    ],
+  });
 });

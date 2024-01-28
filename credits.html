@@ -23,6 +23,7 @@
     data-barba="wrapper"
     class="bg-background-color w-[100vw] overflow-x-hidden scroll-disabled"
   >
+    <!-- Preloader -->
     <div
       class="preloader fixed h-[100vh] w-[100vw] flex justify-center items-center bg-black z-50"
     >
@@ -47,12 +48,16 @@
         </div>
       </div>
     </div>
+    <!-- Page Transiton -->
     <div
       class="bg-black w-[100vw] h-[100vh] absolute pointer-events-none z-30 opacity-0 loader flex items-center justify-center"
     >
       <p class="text-white text-[6rem] text-center loader-text">ZIARA</p>
     </div>
+
+    <!-- Main page content -->
     <main class="bg-background-color relative" data-barba="container">
+      <!-- Header -->
       <header
         class="flex justify-between items-center px-[2rem] lg:px-[4rem] pb-[.4rem] lg:pb-[.8rem] pt-[2rem] border-b-[1.5px] border-black bg-background-color relative z-20"
       >
@@ -65,6 +70,7 @@
           ></div>
         </div>
       </header>
+      <!-- Navigation -->
       <nav
         class="w-0 h-[100vh] pt-[4rem] bg-background-color absolute z-10 transition-all duration-1000 ease-in overscroll-y-hidden"
       >
@@ -110,28 +116,50 @@
           </p>
         </ul>
       </nav>
+      <!-- All Credits -->
       <section class="p-[2rem] sm:p-[4rem]">
         <div class="block sm:flex flex-wrap justify-between items-start">
           <div class="mb-[5rem]">
             <p class="font-[450] text-[2rem]">Design:</p>
             <h1 class="font-[700] text-[3rem]">Fatima Aminu</h1>
             <div class="flex gap-4">
-              <div><i class="fa-brands fa-x-twitter fa-2xl"></i></div>
-              <div><i class="fa-brands fa-linkedin-in fa-2xl"></i></div>
-              <div><i class="fa-brands fa-whatsapp fa-2xl"></i></div>
-              <div><i class="fa-regular fa-envelope fa-2xl"></i></div>
-              <div><i class="fa-brands fa-behance fa-2xl"></i></div>
+              <div>
+                <a href="https://twitter.com/teemah_amin"
+                  ><i class="fa-brands fa-x-twitter fa-2xl"></i
+                ></a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/fatimaaminu/">
+                  <i class="fa-brands fa-linkedin-in fa-2xl"></i
+                ></a>
+              </div>
+              <div>
+                <a
+                  href="https://fatima-aminu.notion.site/Fatima-Aminu-b3554a3c5c4748b78de181b9202b986f"
+                  ><i class="fa-brands fa-neos fa-2xl"></i
+                ></a>
+              </div>
             </div>
           </div>
           <div class="mb-[5rem]">
             <p class="font-[450] text-[2rem]">Development:</p>
             <h1 class="font-[700] text-[3rem]">Tomiwa Bada</h1>
             <div class="flex gap-4">
-              <div><i class="fa-brands fa-x-twitter fa-2xl"></i></div>
-              <div><i class="fa-brands fa-linkedin-in fa-2xl"></i></div>
-              <div><i class="fa-brands fa-whatsapp fa-2xl"></i></div>
-              <div><i class="fa-regular fa-envelope fa-2xl"></i></div>
-              <div><i class="fa-brands fa-github fa-2xl"></i></div>
+              <div>
+                <a href="https://twitter.com/badascript"
+                  ><i class="fa-brands fa-x-twitter fa-2xl"></i
+                ></a>
+              </div>
+              <div>
+                <a href="https://www.linkedin.com/in/tomiwa-bada-572018173/"
+                  ><i class="fa-brands fa-linkedin-in fa-2xl"></i
+                ></a>
+              </div>
+              <div>
+                <a href="https://github.com/tommy-bada"
+                  ><i class="fa-brands fa-github fa-2xl"></i
+                ></a>
+              </div>
             </div>
           </div>
           <div class="mb-[5rem]">
@@ -146,7 +174,7 @@
         <div class="block sm:flex flex-wrap justify-around items-start">
           <div class="mb-[5rem]">
             <p class="font-[450] text-[2rem]">Font:</p>
-            <p class="text-[2.4rem] font-[700]">fivo-sans-modern</p>
+            <p class="text-[2.4rem] font-[700]">Fivo-sans-modern</p>
           </div>
           <div class="mb-[5rem]">
             <p class="font-[450] text-[2rem]">Image Credit:</p>
