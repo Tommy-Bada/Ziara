@@ -95,6 +95,7 @@ document.querySelector("body").addEventListener("mouseout", (e) => {
 });
 
 //Simplicity Section function to animate each image on arrow click
+var scrollWidth = document.querySelector(".item-4-measurer").offsetWidth + 20;
 var container = document.querySelector(".last-scroll-container");
 var currentPosition = 0;
 
@@ -102,8 +103,8 @@ var currentPosition = 0;
 document
   .querySelector(".right-arrow-btn")
   .addEventListener("click", function () {
-    currentPosition -= 410;
-    if (currentPosition < -2460) {
+    currentPosition -= scrollWidth;
+    if (currentPosition < -(scrollWidth * 6)) {
       currentPosition = 0;
       gsap.to(".shop-item-4", {
         x: 0,
@@ -125,8 +126,8 @@ document
 document
   .querySelector(".left-arrow-btn")
   .addEventListener("click", function () {
-    currentPosition += 410;
-    if (currentPosition >= 410) {
+    currentPosition += scrollWidth;
+    if (currentPosition >= scrollWidth) {
       currentPosition = 0;
       return;
     } else {
